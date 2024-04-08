@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .nav-menu {
+      @apply p-7 cursor-pointer hover:pt-5 
+    }
+  }

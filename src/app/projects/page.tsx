@@ -1,3 +1,3 @@
 export default function ProjectPage() {
-    return <section className=" h-full w-full">Project Page</section>
+    return <div className="">Project Page</div>
 }

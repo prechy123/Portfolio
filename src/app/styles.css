@@ -5,6 +5,6 @@
 
 @layer components {
     .nav-menu {
-      @apply p-7 cursor-pointer hover:pt-5 
+      @apply p-5 cursor-pointer hover:pt-5 
     }
   }

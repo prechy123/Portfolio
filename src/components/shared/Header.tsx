@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { MaterialUISwitch } from "../ui/ThemeSwitch";
 
 const paths = [
   { link: "/", pathname: "HOME" },
@@ -15,7 +16,7 @@ export default function Header() {
   return (
     <nav className="sticky top-2 z-10">
       <div className="justify-around items-center mt-6 hidden md:flex backdrop:blur-lg">
-        <div className="border-4 border-white skew-x-12 inline-flex gap-12 w-auto">
+        <div className="border-4 border-white skew-x-12 inline-flex gap-12 w-auto bg-slate-600/25 backdrop-blur-lg">
           {paths.map((path) => {
             const isActive = path.link === pathname ? true : false;
             const navMenuClass = isActive ? "bg-white text-black" : "";
@@ -27,7 +28,7 @@ export default function Header() {
           })}
         </div>
         <div>
-          <div>theme switch</div>
+          <MaterialUISwitch />
         </div>
       </div>
     </nav>

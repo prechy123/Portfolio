@@ -87,7 +87,8 @@ export default function HomePage() {
               <h2>Front-End</h2>
               <p>
                 Experience with: <br />
-                1. NextJs and ReactJs with Typescipt,<br />
+                1. NextJs and ReactJs with Typescipt,
+                <br />
                 2. Framer-Motion, <br />
                 3. Material UI, and <br />
                 4. TailwindCSS.
@@ -101,15 +102,27 @@ export default function HomePage() {
                 2. ExpressJs, <br />
                 3. MongoDB, <br />
                 4. Flask, <br />
-                5. JWT, and<br />
-                5. Passport.<br />
+                5. JWT, and
+                <br />
+                5. Passport.
+                <br />
               </p>
             </div>
           </div>
           <div className=" absolute bottom-2 md:bottom-10 left-1/2 right-1/2 flex flex-col items-center ">
             <Mouse className=" animate-bounce" />
-            <span className="text-sm text-nowrap">Check out projects built with this technologies</span>
+            <span className="text-sm text-nowrap">
+              Check out projects built with this technologies
+            </span>
           </div>
+        </div>
+      </section>
+      <section className="flex flex-col items-center h-screen justify-center relative">
+        <div className="md:w-[600px]">
+          <h1 className=" relative">
+            Projects
+            <span className="absolute w-16 bg-gradient-to-r from-blue-500 to-pink-500 -top-2 h-1 left-0 rounded-lg"></span>
+          </h1>
         </div>
       </section>
     </>

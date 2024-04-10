@@ -52,7 +52,7 @@ export default function AboutPage() {
           <Link href="/projects" className=" underline underline-offset-4">
             <span className="style-text-1">real-world projects</span>
           </Link>{" "}
-          where I've leveraged my technical proficiency to craft exceptional
+          where I have leveraged my technical proficiency to craft exceptional
           solutions tailored to meet various needs.
           <br />
           <br /> Currently, I am actively seeking{" "}
@@ -60,7 +60,7 @@ export default function AboutPage() {
             opportunities to apply my skills and contribute to innovative
             projects.
           </span>{" "}
-          Whether it's collaborating on{" "}
+          Whether it is collaborating on{" "}
           <span className="style-text-1">
             {" "}
             open-source initiatives, participating in hackathons, or exploring
@@ -68,7 +68,7 @@ export default function AboutPage() {
           </span>
           , I am driven by a passion for continuous learning and growth.
           <br />
-          <br /> If you're interested in exploring how I can add value to your
+          <br /> If you are interested in exploring how I can add value to your
           projects or if you have any insights or advice to share regarding job
           search and career progression.
           <br />

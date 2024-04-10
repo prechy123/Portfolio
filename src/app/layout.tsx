@@ -6,7 +6,7 @@ import { Barlow } from "next/font/google";
 import { Provider } from "@/utils/providers";
 
 export const metadata: Metadata = {
-  title: "Prechy - Homepage",
+  title: "Prechy - Home page",
   description:
     "Hello, i am Bamidele Precious and i am a full stack developer current with the MERN stack",
 };

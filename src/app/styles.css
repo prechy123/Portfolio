@@ -13,4 +13,11 @@
     .technology-card {
       @apply border-4 border-black dark:border-white inline-flex flex-col gap-5 w-auto bg-slate-600/25 backdrop-blur-lg rounded p-5 flex-1
     }
+    .view-more-btn {
+      @apply border-4 border-black dark:border-white skew-x-12 inline-block bg-slate-600/25 backdrop-blur-lg rounded p-3
+    }
+    .style-text-1 {
+      @apply bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent
+
+    }
   }

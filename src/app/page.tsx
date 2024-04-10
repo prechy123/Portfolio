@@ -2,6 +2,7 @@ import TypingAnimation from "@/components/ui/TypingAnimation";
 import {
   GitHub,
   Instagram,
+  Launch,
   LinkedIn,
   Mail,
   Mouse,
@@ -9,6 +10,16 @@ import {
   WavingHand,
 } from "@mui/icons-material";
 import Link from "next/link";
+import { projects } from "./projects/projectsContents";
+import ProjectCard from "@/components/projectCom/ProjectCard";
+import { Metadata } from "next";
+import ContactCom from "@/components/ui/ContactCom";
+
+export const metadata: Metadata = {
+  title: "Portfolio - Home Page",
+  description:
+    "Front-End & Back-End Expertise: Explore the web development portfolio of Bamidele Ayomide Precious, a skilled MERN Stack developer. See real-world projects and how I can craft exceptional solutions for your needs."
+};
 
 export default function HomePage() {
   return (
@@ -22,7 +33,7 @@ export default function HomePage() {
             </span>
           </h1>
           <h3>
-            My name is <span className=" ">Bamidele Ayomide Precious</span>
+            My name is <span>Bamidele Ayomide Precious</span>
           </h3>
           <h3>
             I am a <TypingAnimation />{" "}
@@ -33,43 +44,7 @@ export default function HomePage() {
           >
             Learn More
           </Link>
-          <div className="flex gap-2">
-            <a
-              href="https://github.com/prechy123"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <GitHub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ayomide-bamidele-347573275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LinkedIn />
-            </a>
-            <a
-              href="https://www.instagram.com/prec__hy?igsh=dDZ0M25ybGVobXZq"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Instagram />
-            </a>
-            <a
-              href="https://x.com/prec__hy?t=eIsHaXmAnhusM5toM8XSPg&s=09"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Twitter />
-            </a>
-            <a
-              href="mailto:bamideleprecious100@gmail.com?body=Hi,%20My%20name%20is%20"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Mail />
-            </a>
-          </div>
+          <ContactCom />
           <div className=" absolute bottom-24 md:bottom-10 left-1/2 right-1/2 flex flex-col items-center ">
             <Mouse className=" animate-bounce" />
             <span className="text-sm text-nowrap">Scroll Down</span>
@@ -78,7 +53,7 @@ export default function HomePage() {
       </section>
       <section className="flex flex-col items-center h-screen justify-center relative">
         <div className="md:w-[600px]">
-          <h1 className=" relative">
+          <h1 className=" relative text-2xl pb-4">
             Technologies
             <span className="absolute w-16 bg-gradient-to-r from-blue-500 to-pink-500 -top-2 h-1 left-0 rounded-lg"></span>
           </h1>
@@ -90,8 +65,9 @@ export default function HomePage() {
                 1. NextJs and ReactJs with Typescipt,
                 <br />
                 2. Framer-Motion, <br />
-                3. Material UI, and <br />
-                4. TailwindCSS.
+                3. EJS, <br />
+                4. Material UI, and <br />
+                5. TailwindCSS.
               </p>
             </div>
             <div className="technology-card">
@@ -118,11 +94,57 @@ export default function HomePage() {
         </div>
       </section>
       <section className="flex flex-col items-center h-screen justify-center relative">
-        <div className="md:w-[600px]">
-          <h1 className=" relative">
+        <div className="md:w-[600px] flex flex-col items-center">
+          <div>
+          <h1 className=" relative text-2xl pb-4">
             Projects
             <span className="absolute w-16 bg-gradient-to-r from-blue-500 to-pink-500 -top-2 h-1 left-0 rounded-lg"></span>
           </h1>
+          <div className=" grid md:grid-cols-2 gap-4">
+            {projects
+              .filter((_project, index) => index < 2)
+              .map((project) => (
+                <ProjectCard key={project._id}>
+                  <div className=" flex justify-between">
+                    <h1>{project.name}</h1>
+                    <div>
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        className=" pr-2"
+                      >
+                        <GitHub />
+                      </a>
+                      <a href={project.hostedLink} target="_blank">
+                        <Launch />
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <p>{project.description}</p>
+                    <div>
+                      <h2 className="pt-1">Technologies Used: </h2>
+                      {project.stacks.map((stack, index) => (
+                        <span
+                          key={stack}
+                          className=" bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent"
+                        >
+                          {stack}
+                          {index === project.stacks.length - 1 ? "" : " - "}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </ProjectCard>
+              ))}
+          </div>
+          </div>
+          <Link
+            href="/projects"
+            className="view-more-btn my-4 bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent"
+          >
+            View More
+          </Link>
         </div>
       </section>
     </>

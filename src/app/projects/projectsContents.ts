@@ -46,7 +46,7 @@ export const projects: projects[] = [
     description:
       " My personal portfolio built using Next.js with Typescript",
     type: "open source",
-    hostedLink: "",
+    hostedLink: "https://portfolio-henna-seven-84.vercel.app/",
     githubLink: "https://github.com/prechy123/Portfolio",
   },
   {

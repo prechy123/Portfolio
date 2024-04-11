@@ -28,7 +28,9 @@ export default function RootLayout({
       >
         <Provider>
           <Header />
-          <main style={{ width: "100%", minHeight: "100vh", padding: "20px" }}>{children}</main>
+          <main style={{ width: "100%", minHeight: "100vh", padding: "20px" }}>
+            {children}
+          </main>
           <Footer />
         </Provider>
       </body>

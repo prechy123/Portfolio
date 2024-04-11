@@ -24,7 +24,7 @@ export default function ProjectPage() {
               .map((project) => (
                 <ProjectCard key={project._id}>
                   <div className=" flex justify-between">
-                    <h1>{project.name}</h1>
+                  <a href={project.hostedLink} target="_blank"><h1>{project.name}</h1> </a>
                     <div>
                       <a
                         href={project.githubLink}
@@ -38,7 +38,7 @@ export default function ProjectPage() {
                       </a>
                     </div>
                   </div>
-                  <div>
+                  <a href={project.hostedLink} target="_blank"><div>
                     <p>{project.description}</p>
                     <div>
                       <h2 className=" pt-1">Technologies Used: </h2>
@@ -53,6 +53,7 @@ export default function ProjectPage() {
                       ))}
                     </div>
                   </div>
+                  </a>
                 </ProjectCard>
               ))}
           </div>

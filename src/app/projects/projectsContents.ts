@@ -19,6 +19,15 @@ export const projects: projects[] = [
   },
   {
     _id: 2,
+    name: "Food-App-Vue",
+    stacks: ["VueJS", "NodeJs", "ExpressJs", "MongoDB"],
+    description:
+      "This website allows users to search for food, view recipes and cooking instructions, and save their favorite recipes to their accounts built using VueJs.",
+    hostedLink: "https://food-app-vuejs.onrender.com",
+    githubLink: "https://github.com/prechy123/food-app-vueJS",
+  },
+  {
+    _id: 3,
     name: "Food-App",
     stacks: ["React", "NodeJs", "MongoDB", "ExpressJs", "Framer Motion"],
     description:
@@ -27,7 +36,7 @@ export const projects: projects[] = [
     githubLink: "https://github.com/prechy123/Food-App",
   },
   {
-    _id: 3,
+    _id: 4,
     name: "PeerPocket",
     stacks: [
       "ReactJs",
@@ -44,7 +53,7 @@ export const projects: projects[] = [
     githubLink: "https://github.com/Bit-Lockers",
   },
   {
-    _id: 4,
+    _id: 5,
     name: "Portfolio",
     stacks: ["NextJs", "TailwindCSS"],
     description: " My personal portfolio built using Next.js with Typescript",
@@ -52,7 +61,7 @@ export const projects: projects[] = [
     githubLink: "https://github.com/prechy123/Portfolio",
   },
   {
-    _id: 5,
+    _id: 6,
     name: "GDmovies",
     stacks: ["EJS", "NodeJs", "MongoDB", "ExpressJs"],
     description:
@@ -61,7 +70,7 @@ export const projects: projects[] = [
     githubLink: "https://github.com/prechy123/GDmovies",
   },
   {
-    _id: 6,
+    _id: 7,
     name: "Lago",
     stacks: ["ReactJs", "NodeJs", "MongoDB", "ExpressJs", "Framer Motion"],
     description:
@@ -70,7 +79,7 @@ export const projects: projects[] = [
     githubLink: "https://github.com/prechy123/Lago",
   },
   {
-    _id: 7,
+    _id: 8,
     name: "Elizade Clone",
     stacks: ["HTML", "CSS", "Javascript"],
     description: "A cloned elizade universiy website",

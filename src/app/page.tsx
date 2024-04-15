@@ -62,12 +62,13 @@ export default function HomePage() {
               <h2>Front-End</h2>
               <p>
                 Experience with: <br />
-                1. NextJs and ReactJs with Typescipt,
-                <br />
-                2. Framer-Motion, <br />
-                3. EJS, <br />
-                4. Material UI, and <br />
-                5. TailwindCSS.
+                1. NextJs,<br />
+                2. ReactJs <br />
+                3. VueJs <br />
+                3. Framer-Motion, <br />
+                4. EJS, <br />
+                5. Material UI, and <br />
+                6. TailwindCSS.
               </p>
             </div>
             <div className="technology-card">

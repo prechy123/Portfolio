@@ -41,7 +41,7 @@ export default function AboutPage() {
           <br />
           My everyday tech stack includes{" "}
           <span className="style-text-1">
-            NextJs , Typescript , Tailwind , Javascript, Python e.t.c.
+            NextJs , NuxtJs, VueJs, Typescript , Tailwind CSS, Javascript, Python e.t.c.
           </span>{" "}
           My Operating System of choice is{" "}
           <span className=" style-text-1">Ubuntu with Windows</span> and{" "}

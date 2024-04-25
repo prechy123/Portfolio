@@ -63,12 +63,13 @@ export default function HomePage() {
               <p>
                 Experience with: <br />
                 1. NextJs,<br />
-                2. ReactJs <br />
-                3. VueJs <br />
-                3. Framer-Motion, <br />
-                4. EJS, <br />
-                5. Material UI, and <br />
-                6. TailwindCSS.
+                2. NuxtJs, <br />
+                3. ReactJs, <br />
+                4. VueJs, <br />
+                5. Framer-Motion, <br />
+                6. EJS, <br />
+                7. Material UI, and <br />
+                8. TailwindCSS.
               </p>
             </div>
             <div className="technology-card">
@@ -78,8 +79,7 @@ export default function HomePage() {
                 1. NodeJs, <br />
                 2. ExpressJs, <br />
                 3. MongoDB, <br />
-                4. Flask, <br />
-                5. JWT, and
+                4. JWT, and
                 <br />
                 5. Passport.
                 <br />

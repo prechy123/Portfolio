@@ -67,9 +67,8 @@ export default function HomePage() {
                 3. ReactJs, <br />
                 4. VueJs, <br />
                 5. Framer-Motion, <br />
-                6. EJS, <br />
-                7. Material UI, and <br />
-                8. TailwindCSS.
+                6. Material UI, and <br />
+                7. TailwindCSS.
               </p>
             </div>
             <div className="technology-card">

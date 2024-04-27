@@ -77,13 +77,5 @@ export const projects: projects[] = [
       "(DESKTOP ONLY) This is a simple ReactJs application to perfect React skills",
     hostedLink: "https://lago-xw5l.onrender.com",
     githubLink: "https://github.com/prechy123/Lago",
-  },
-  {
-    _id: 8,
-    name: "Elizade Clone",
-    stacks: ["HTML", "CSS", "Javascript"],
-    description: "A cloned elizade universiy website",
-    hostedLink: "https://prechy123.github.io/Elizade-Website-Clone/",
-    githubLink: "https://github.com/prechy123/Lago",
-  },
+  }
 ];

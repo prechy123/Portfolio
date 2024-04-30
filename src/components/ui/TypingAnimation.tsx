@@ -8,6 +8,8 @@ const TypingAnimation = () => {
       sequence={[
         "Full-Stack Developer.",
         2000,
+        "Computer Engineer.",
+        2000,
         "MERN Stack Developer.",
         1000,
       ]}

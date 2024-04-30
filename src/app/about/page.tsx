@@ -60,7 +60,7 @@ export default function AboutPage() {
             opportunities to apply my skills and contribute to innovative
             projects.
           </span>{" "}
-          Whether it is collaborating on{" "}
+          Whether it is collaborating in{" "}
           <span className="style-text-1">
             {" "}
             open-source initiatives, participating in hackathons, or exploring
@@ -90,7 +90,7 @@ export default function AboutPage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className=" style-text-1">(08106653031)</span>
+            <span className=" style-text-1">(+2348106653031)</span>
           </a>{" "}
           to chat about projects and ideas.
         </p>

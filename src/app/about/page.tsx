@@ -4,9 +4,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Portfolio - AboutPage",
-  description:
-    "Front-End & Back-End Expertise: Explore the web development portfolio of Bamidele Ayomide Precious, a skilled MERN Stack developer. See real-world projects and how I can craft exceptional solutions for your needs.",
+  title: "Bamidele - About",
 };
 
 export default function AboutPage() {

@@ -12,14 +12,7 @@ import {
 import Link from "next/link";
 import { projects } from "./projects/projectsContents";
 import ProjectCard from "@/components/projectCom/ProjectCard";
-import { Metadata } from "next";
 import ContactCom from "@/components/ui/ContactCom";
-
-export const metadata: Metadata = {
-  title: "Portfolio - Home Page",
-  description:
-    "Front-End & Back-End Expertise: Explore the web development portfolio of Bamidele Ayomide Precious, a skilled MERN Stack developer. See real-world projects and how I can craft exceptional solutions for your needs.",
-};
 
 export default function HomePage() {
   return (
@@ -53,22 +46,24 @@ export default function HomePage() {
       </section>
       <section className="flex flex-col items-center h-screen justify-center relative">
         <div className="md:w-[600px]">
-          <h1 className=" relative text-2xl pb-4">
+          <h2 className=" relative text-2xl pb-4">
             Technologies
             <span className="absolute w-16 bg-gradient-to-r from-blue-500 to-pink-500 -top-2 h-1 left-0 rounded-lg"></span>
-          </h1>
+          </h2>
           <div className=" flex gap-4 flex-col md:flex-row">
             <div className="technology-card">
               <h2>Front-End</h2>
               <p>
                 Experience with: <br />
-                1. NextJs,<br />
+                1. NextJs,
+                <br />
                 2. NuxtJs, <br />
                 3. ReactJs, <br />
                 4. VueJs, <br />
-                5. Framer-Motion, <br />
-                6. Material UI, and <br />
-                7. TailwindCSS.
+                5. React Native, <br />
+                6. Framer-Motion, <br />
+                7. Material UI, and <br />
+                8. TailwindCSS.
               </p>
             </div>
             <div className="technology-card">
@@ -88,7 +83,7 @@ export default function HomePage() {
           <div className=" absolute bottom-2 md:bottom-10 left-1/2 right-1/2 flex flex-col items-center ">
             <Mouse className=" animate-bounce" />
             <span className="text-sm text-nowrap">
-              Check out projects built with this technologies
+              Visit to explore a range of real-world projects.
             </span>
           </div>
         </div>
@@ -96,10 +91,10 @@ export default function HomePage() {
       <section className="flex flex-col items-center h-screen justify-center relative">
         <div className="md:w-[600px] flex flex-col items-center">
           <div>
-            <h1 className=" relative text-2xl pb-4">
+            <h2 className=" relative text-2xl pb-4">
               Projects
               <span className="absolute w-16 bg-gradient-to-r from-blue-500 to-pink-500 -top-2 h-1 left-0 rounded-lg"></span>
-            </h1>
+            </h2>
             <div className=" grid md:grid-cols-2 gap-4">
               {projects
                 .filter((_project, index) => index < 2)
@@ -107,7 +102,7 @@ export default function HomePage() {
                   <ProjectCard key={project._id}>
                     <div className=" flex justify-between">
                       <a href={project.hostedLink} target="_blank">
-                        <h1>{project.name}</h1>
+                        <h2>{project.name}</h2>
                       </a>
                       <div>
                         <a

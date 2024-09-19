@@ -26,6 +26,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="next-size-adjust" content="" />
+        <meta name="google-site-verification" content="iAg3Wn_WXEuHyzs8riE6RlncEF3mYCwj2SrVNVWl3kU" />
         <link rel="shortcut icon" href="/image/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/image/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png" />

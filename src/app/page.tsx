@@ -10,7 +10,7 @@ import {
   WavingHand,
 } from "@mui/icons-material";
 import Link from "next/link";
-import { projects } from "./projects/projectsContents";
+import { projects } from "./projectsContents";
 import ProjectCard from "@/components/projectCom/ProjectCard";
 import ContactCom from "@/components/ui/ContactCom";
 
@@ -101,9 +101,9 @@ export default function HomePage() {
                 .map((project) => (
                   <ProjectCard key={project._id}>
                     <div className=" flex justify-between">
-                      <a href={project.hostedLink} target="_blank">
+                      
                         <h2>{project.name}</h2>
-                      </a>
+                      
                       <div>
                         <a
                           href={project.githubLink}
@@ -117,7 +117,7 @@ export default function HomePage() {
                         </a>
                       </div>
                     </div>
-                    <a href={project.hostedLink} target="_blank">
+                    <a href={`/project/${project._id}`}>
                       <div>
                         <p>{project.description}</p>
                         <div>

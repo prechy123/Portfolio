@@ -1,0 +1,120 @@
+export interface Project {
+  _id: number;
+  name: string;
+  stacks: string[];
+  description: string;
+  hostedLink: string;
+  githubLink: string;
+  images: string[] | null;
+}
+
+export const projects: Project[] = [
+  {
+    _id: 1,
+    name: "Anime-Connect",
+    stacks: ["React", "NodeJs", "ExpressJs", "MongoDB"],
+    description:
+      "A full-stacks social media platform dedicated to anime enthusiasts around the world. Connect with fellow fans, share your favorite anime moments, and discover new series to binge-watch!",
+    hostedLink: "https://anime-connect.onrender.com/",
+    githubLink: "https://github.com/prechy123/Anime-Connect",
+    images: [
+      "/image/projects/weeebs/1.png",
+      "/image/projects/weeebs/2.png",
+      "/image/projects/weeebs/3.png",
+      "/image/projects/weeebs/4.png",
+    ],
+  },
+  {
+    _id: 2,
+    name: "Food-App-Vue",
+    stacks: ["VueJS", "NodeJs", "ExpressJs", "MongoDB"],
+    description:
+      "This website allows users to search for food, view recipes and cooking instructions, and save their favorite recipes to their accounts built using VueJs.",
+    hostedLink: "https://food-app-vuejs.onrender.com",
+    githubLink: "https://github.com/prechy123/food-app-vueJS",
+    images: [
+      "/image/projects/food-vueJS/1.png",
+      "/image/projects/food-vueJS/2.png",
+      "/image/projects/food-vueJS/3.png",
+      "/image/projects/food-vueJS/4.png",
+    ],
+  },
+  {
+    _id: 3,
+    name: "Food-App",
+    stacks: ["React", "NodeJs", "MongoDB", "ExpressJs", "Framer Motion"],
+    description:
+      "This website allows users to search for food, view recipes and cooking instructions, and save their favorite recipes to their accounts.",
+    hostedLink: "https://foodapp-wmqs.onrender.com/",
+    githubLink: "https://github.com/prechy123/Food-App",
+    images: [
+      "/image/projects/food-reactJS/1.png",
+      "/image/projects/food-reactJS/2.png",
+      "/image/projects/food-reactJS/3.png",
+      "/image/projects/food-reactJS/4.png",
+    ],
+  },
+  {
+    _id: 4,
+    name: "Portfolio",
+    stacks: ["NextJs", "TailwindCSS"],
+    description: " My personal portfolio built using Next.js with Typescript",
+    hostedLink: "/",
+    githubLink: "https://github.com/prechy123/Portfolio",
+    images: [
+      "/image/projects/portfolio/1.png",
+      "/image/projects/portfolio/2.png",
+      "/image/projects/portfolio/3.png",
+      "/image/projects/portfolio/4.png",
+    ],
+  },
+  {
+    _id: 5,
+    name: "Batch Tools",
+    stacks: ["NextJs", "TypeScript", "Django", "TailwindCSS"],
+    description:
+      "An All-In-One application to perform various operation to your various file formats",
+    hostedLink: "https://batchtools.site/",
+    githubLink: "https://github.com/prechy123/Batch-Tools",
+    images: [
+      "/image/projects/batch-tools/1.png",
+      "/image/projects/batch-tools/2.png",
+      "/image/projects/batch-tools/3.png",
+      "/image/projects/batch-tools/4.png",
+    ],
+  },
+  {
+    _id: 6,
+    name: "CGPA Calculator",
+    stacks: ["React-Native"],
+    description: "Nigeria CGPA Calculator for IoS and Android",
+    hostedLink: "https://drive.google.com/file/d/1skRCLftttrHMUAZnp9dZ-O-Ur5nSW3Dm/view?usp=drive_link",
+    githubLink: "https://github.com/prechy123/CGPA-Calculator",
+    images: [
+      "",
+      "",
+      "/image/projects/cgpa-calculator/1.jpg",
+      "/image/projects/cgpa-calculator/2.jpg",
+      "/image/projects/cgpa-calculator/3.jpg",
+      "/image/projects/cgpa-calculator/4.jpg",
+    ],
+  },
+  {
+    _id: 7,
+    name: "PeerPocket",
+    stacks: [
+      "ReactJs",
+      "NodeJs",
+      "MongoDB",
+      "ExpressJs",
+      "Python",
+      "SCSS",
+      "Flask",
+    ],
+    description:
+      "This is a website built in an hackathon where individuals can request loans from other people. The system is designed to facilitate the lending and borrowing of money between users, handling dispute and calculating creadi score",
+    hostedLink: "/",
+    githubLink: "/",
+    images: null,
+  },
+];

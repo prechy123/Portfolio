@@ -1,7 +1,7 @@
 import ProjectCard from "@/components/projectCom/ProjectCard";
+import { projects } from "../projectsContents";
 import { GitHub, Launch } from "@mui/icons-material";
 import { Metadata } from "next";
-import { projects } from "../projectsContents";
 
 export const metadata: Metadata = {
   title: "Bamidele - Projects",
@@ -36,7 +36,7 @@ export default function ProjectPage() {
                     </a>
                   </div>
                 </div>
-                <a href={`/project/${project._id}`}>
+                <a href={project.hostedLink} target="_blank">
                   <div>
                     <p>{project.description}</p>
                     <div>

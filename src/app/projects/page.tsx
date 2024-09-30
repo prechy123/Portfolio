@@ -38,7 +38,10 @@ export default function ProjectPage() {
                 </div>
                 <a href={`/project/${project._id}`}>
                   <div>
-                    <p>{project.description}</p>
+                    <p>
+                      {project.description}...{" "}
+                      <p className="underline">view more</p>
+                    </p>
                     <div>
                       <h2 className=" pt-1">Technologies Used: </h2>
                       {project.stacks.map((stack, index) => (

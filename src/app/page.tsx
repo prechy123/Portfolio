@@ -101,9 +101,7 @@ export default function HomePage() {
                 .map((project) => (
                   <ProjectCard key={project._id}>
                     <div className=" flex justify-between">
-                      
-                        <h2>{project.name}</h2>
-                      
+                      <h2>{project.name}</h2>
                       <div>
                         <a
                           href={project.githubLink}
@@ -119,7 +117,11 @@ export default function HomePage() {
                     </div>
                     <a href={`/project/${project._id}`}>
                       <div>
-                        <p>{project.description}</p>
+                        <p>
+                          {project.description}...{" "}
+                          <p className="underline">view more</p>
+                        </p>
+
                         <div>
                           <h2 className="pt-1">Technologies Used: </h2>
                           {project.stacks.map((stack, index) => (

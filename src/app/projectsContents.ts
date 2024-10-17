@@ -26,6 +26,28 @@ export const projects: Project[] = [
   },
   {
     _id: 2,
+    name: "board-games",
+    stacks: [
+      "NextJS",
+      "NodeJs",
+      "ExpressJs",
+      "MongoDB",
+      "Framer Motion",
+      "TailwindCSS",
+    ],
+    description:
+      "A user friendly Real-Time Cross-Platform Application to play different board games(such as. Tic-Tac-Toe, Chess, Checkers, Scrabble, Ludo e.t.c) with your friends and family. NextJs, NodeJs, React-Native",
+    hostedLink: "https://board-games-two.vercel.app/",
+    githubLink: "https://github.com/prechy123/board-games",
+    images: [
+      "/image/projects/board-games/1.png",
+      "/image/projects/board-games/2.png",
+      "/image/projects/board-games/3.png",
+      "/image/projects/board-games/4.png",
+    ],
+  },
+  {
+    _id: 3,
     name: "Food-App-Vue",
     stacks: ["VueJS", "NodeJs", "ExpressJs", "MongoDB"],
     description:
@@ -40,36 +62,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    _id: 3,
-    name: "Food-App",
-    stacks: ["React", "NodeJs", "MongoDB", "ExpressJs", "Framer Motion"],
-    description:
-      "This website allows users to search for food, view recipes and cooking instructions, and save their favorite recipes to their accounts.",
-    hostedLink: "https://foodapp-wmqs.onrender.com/",
-    githubLink: "https://github.com/prechy123/Food-App",
-    images: [
-      "/image/projects/food-reactJS/1.png",
-      "/image/projects/food-reactJS/2.png",
-      "/image/projects/food-reactJS/3.png",
-      "/image/projects/food-reactJS/4.png",
-    ],
-  },
-  {
     _id: 4,
-    name: "Portfolio",
-    stacks: ["NextJs", "TailwindCSS"],
-    description: " My personal portfolio built using Next.js with Typescript",
-    hostedLink: "/",
-    githubLink: "https://github.com/prechy123/Portfolio",
-    images: [
-      "/image/projects/portfolio/1.png",
-      "/image/projects/portfolio/2.png",
-      "/image/projects/portfolio/3.png",
-      "/image/projects/portfolio/4.png",
-    ],
-  },
-  {
-    _id: 5,
     name: "Batch Tools",
     stacks: ["NextJs", "TypeScript", "Django", "TailwindCSS"],
     description:
@@ -84,11 +77,42 @@ export const projects: Project[] = [
     ],
   },
   {
+    _id: 5,
+    name: "Food-App",
+    stacks: ["React", "NodeJs", "MongoDB", "ExpressJs", "Framer Motion"],
+    description:
+      "This website allows users to search for food, view recipes and cooking instructions, and save their favorite recipes to their accounts.",
+    hostedLink: "https://foodapp-wmqs.onrender.com/",
+    githubLink: "https://github.com/prechy123/Food-App",
+    images: [
+      "/image/projects/food-reactJS/1.png",
+      "/image/projects/food-reactJS/2.png",
+      "/image/projects/food-reactJS/3.png",
+      "/image/projects/food-reactJS/4.png",
+    ],
+  },
+  {
     _id: 6,
+    name: "Portfolio",
+    stacks: ["NextJs", "TailwindCSS"],
+    description: " My personal portfolio built using Next.js with Typescript",
+    hostedLink: "/",
+    githubLink: "https://github.com/prechy123/Portfolio",
+    images: [
+      "/image/projects/portfolio/1.png",
+      "/image/projects/portfolio/2.png",
+      "/image/projects/portfolio/3.png",
+      "/image/projects/portfolio/4.png",
+    ],
+  },
+
+  {
+    _id: 7,
     name: "CGPA Calculator",
     stacks: ["React-Native"],
     description: "Nigeria CGPA Calculator for IoS and Android",
-    hostedLink: "https://drive.google.com/file/d/1skRCLftttrHMUAZnp9dZ-O-Ur5nSW3Dm/view?usp=drive_link",
+    hostedLink:
+      "https://drive.google.com/file/d/1skRCLftttrHMUAZnp9dZ-O-Ur5nSW3Dm/view?usp=drive_link",
     githubLink: "https://github.com/prechy123/CGPA-Calculator",
     images: [
       "",
@@ -100,7 +124,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    _id: 7,
+    _id: 8,
     name: "PeerPocket",
     stacks: [
       "ReactJs",
@@ -112,7 +136,7 @@ export const projects: Project[] = [
       "Flask",
     ],
     description:
-      "This is a website built in an hackathon where individuals can request loans from other people. The system is designed to facilitate the lending and borrowing of money between users, handling dispute and calculating creadi score",
+      "This is a website built in an hackathon where individuals can request loans from other people. The system is designed to facilitate the lending and borrowing of money between users, handling dispute and calculating credit score",
     hostedLink: "/",
     githubLink: "/",
     images: null,

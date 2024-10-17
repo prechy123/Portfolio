@@ -24,7 +24,7 @@ const ProjectGallery = ({ images } : {images: string[]}) => {
                   src={imageUrl}
                   width={1000}
                   height={500}
-                  className=" rounded-lg"
+                  className=" rounded-lg border border-white"
                   data-gallery
                 />
               )}

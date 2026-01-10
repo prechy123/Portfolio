@@ -10,6 +10,36 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    _id: 0,
+    name: "SnapUs",
+    stacks: ["React-Native(Expo)", "NestJs", "NextJs", "MongoDB", "AWS", "Fargate"],
+    description:
+      "SnapUs Makes It Effortless To Collect Photos And Videos From Everyone At Your Event, All In One Shared Album. No More Hassle Of Sharing Links Or Collecting Files. Just Scan, Shoot, And Share.",
+    hostedLink: "https://www.snapus.app",
+    githubLink: "https://www.snapus.app/mobile-app",
+    images: [
+      "/image/projects/snap-us/1.png",
+      "/image/projects/snap-us/2.png",
+      "/image/projects/snap-us/3.png",
+      "/image/projects/snap-us/4.png",
+    ],
+  },
+  {
+    _id: 0.3,
+    name: "SnapChat AI",
+    stacks: ["NextJs", "MongoDB", "PostgresDB", "Azure", "Python + Fast API", "Llama", "Pinecone"],
+    description:
+      "SharpChat AI is an intelligent, multi-tenant whatsapp chatbot platform specifically engineered for Small and Medium Enterprises (SMEs) in Nigeria. By combining WhatsApp integration with AI agent.",
+    hostedLink: "https://rain-meta-hack-web.vercel.app",
+    githubLink: "https://rain-meta-hack-web.vercel.app",
+    images: [
+      "/image/projects/sharpchat/1.png",
+      "/image/projects/sharpchat/2.png",
+      "/image/projects/sharpchat/3.png",
+      "/image/projects/sharpchat/4.png",
+    ],
+  },
+  {
     _id: 1,
     name: "Anime-Connect",
     stacks: ["React", "NodeJs", "ExpressJs", "MongoDB"],

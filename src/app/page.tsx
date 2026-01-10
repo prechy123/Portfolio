@@ -1,153 +1,116 @@
-import TypingAnimation from "@/components/ui/TypingAnimation";
-import {
-  GitHub,
-  Instagram,
-  Launch,
-  LinkedIn,
-  Mail,
-  Mouse,
-  Twitter,
-  WavingHand,
-} from "@mui/icons-material";
-import Link from "next/link";
-import { projects } from "./projectsContents";
-import ProjectCard from "@/components/projectCom/ProjectCard";
 import ContactCom from "@/components/ui/ContactCom";
+import TypingAnimation from "@/components/ui/TypingAnimation";
+import Link from "next/link";
+import Image from "next/image";
+import { Code, CloudQueue, Devices } from "@mui/icons-material";
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <>
-      <section className="container md:py-24 flex flex-col items-center h-screen justify-center md:justify-normal ">
-        <div className="text-3xl md:w-[600px]">
-          <h1 className=" text-7xl animate-pulse pb-4">
-            Hello{" "}
-            <span>
-              <WavingHand className=" text-5xl" />
-            </span>
-          </h1>
-          <h3>
-            My name is <span>Bamidele Ayomide Precious</span>
-          </h3>
-          <h3>
-            I am a <TypingAnimation />{" "}
-          </h3>
-          <Link
-            href="/about"
-            className="learn-more-btn my-4 bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent"
-          >
-            Learn More
-          </Link>
-          <ContactCom />
-          <div className=" absolute bottom-24 md:bottom-10 left-1/2 right-1/2 flex flex-col items-center ">
-            <Mouse className=" animate-bounce" />
-            <span className="text-sm text-nowrap">Scroll Down</span>
-          </div>
-        </div>
-      </section>
-      <section className="flex flex-col items-center h-screen justify-center relative">
-        <div className="md:w-[600px]">
-          <h2 className=" relative text-2xl pb-4">
-            Technologies
-            <span className="absolute w-16 bg-gradient-to-r from-blue-500 to-pink-500 -top-2 h-1 left-0 rounded-lg"></span>
-          </h2>
-          <div className=" flex gap-4 flex-col md:flex-row">
-            <div className="technology-card">
-              <h2>Front-End</h2>
-              <p>
-                Experience with: <br />
-                1. NextJs,
-                <br />
-                2. NuxtJs, <br />
-                3. ReactJs, <br />
-                4. VueJs, <br />
-                5. React Native, <br />
-                6. Framer-Motion, <br />
-                7. Material UI, and <br />
-                8. TailwindCSS.
-              </p>
-            </div>
-            <div className="technology-card">
-              <h2>Back-End</h2>
-              <p>
-                Experience with: <br />
-                1. NodeJs, <br />
-                2. ExpressJs, <br />
-                3. MongoDB, <br />
-                4. JWT, and
-                <br />
-                5. Passport.
-                <br />
-              </p>
-            </div>
-          </div>
-          <div className=" absolute bottom-2 md:bottom-10 left-1/2 right-1/2 flex flex-col items-center ">
-            <Mouse className=" animate-bounce" />
-            <span className="text-sm text-nowrap">
-              Visit to explore a range of real-world projects.
-            </span>
-          </div>
-        </div>
-      </section>
-      <section className="flex flex-col items-center h-screen justify-center relative">
-        <div className="md:w-[600px] flex flex-col items-center">
-          <div>
-            <h2 className=" relative text-2xl pb-4">
-              Projects
-              <span className="absolute w-16 bg-gradient-to-r from-blue-500 to-pink-500 -top-2 h-1 left-0 rounded-lg"></span>
-            </h2>
-            <div className=" grid md:grid-cols-2 gap-4">
-              {projects
-                .filter((_project, index) => index < 2)
-                .map((project) => (
-                  <ProjectCard key={project._id}>
-                    <div className=" flex justify-between">
-                      <h2>{project.name}</h2>
-                      <div>
-                        <a
-                          href={project.githubLink}
-                          target="_blank"
-                          className=" pr-2"
-                        >
-                          <GitHub />
-                        </a>
-                        <a href={project.hostedLink} target="_blank">
-                          <Launch />
-                        </a>
-                      </div>
-                    </div>
-                    <a href={`/project/${project._id}`}>
-                      <div>
-                        <p>
-                          {project.description}...{" "}
-                          <p className="underline">view more</p>
-                        </p>
+    <section className="flex flex-col items-center min-h-screen justify-center fade-in">
+      <div className="text-center md:w-[600px] px-4">
+        <h1 className="text-3xl sm:text-4xl font-bold mb-4 slide-up text-slate-900 dark:text-slate-100">
+          Bamidele Ayomide Precious
+        </h1>
 
-                        <div>
-                          <h2 className="pt-1">Technologies Used: </h2>
-                          {project.stacks.map((stack, index) => (
-                            <span
-                              key={stack}
-                              className=" bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent"
-                            >
-                              {stack}
-                              {index === project.stacks.length - 1 ? "" : " - "}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    </a>
-                  </ProjectCard>
-                ))}
-            </div>
+        <div className="mb-6 slide-up" style={{ animationDelay: "0.1s" }}>
+          <TypingAnimation />
+        </div>
+
+        <p
+          className="text-lg sm:text-xl mb-8 text-slate-700 dark:text-slate-300 slide-up leading-relaxed"
+          style={{ animationDelay: "0.3s" }}
+        >
+          Professional Full Stack Developer with 5+ years of experience building
+          scalable web and mobile applications. Specialized in mobile apps, web
+          apps, backend systems, and cloud deployments.
+        </p>
+
+        {/* Tech Stack Highlights */}
+        <div
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 slide-up"
+          style={{ animationDelay: "0.4s" }}
+        >
+          <div className="p-4 bg-gradient-to-br from-indigo-50 to-indigo-100/60 dark:from-indigo-950/50 dark:to-slate-900 rounded-lg hover:scale-105 transition-transform border border-indigo-200 dark:border-indigo-800 shadow-sm">
+            <Code className="text-4xl text-indigo-600 dark:text-indigo-400 mb-2" />
+            <h3 className="font-bold text-lg mb-1 text-slate-900 dark:text-slate-100">
+              Full Stack
+            </h3>
+            <p className="text-sm text-slate-600 dark:text-slate-400">
+              React(NextJS), React-Native(Expo), Vue(NuxtJS), Node.js(NestJS),
+              python(Flask)
+            </p>
           </div>
-          <Link
-            href="/projects"
-            className="view-more-btn my-4 bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent"
-          >
-            View More
+          <div className="p-4 bg-gradient-to-br from-indigo-50 to-indigo-100/60 dark:from-indigo-950/50 dark:to-slate-900 rounded-lg hover:scale-105 transition-transform border border-indigo-200 dark:border-indigo-800 shadow-sm">
+            <CloudQueue className="text-4xl text-pink-600 dark:text-pink-400 mb-2" />
+            <h3 className="font-bold text-lg mb-1 text-slate-900 dark:text-slate-100">
+              Cloud
+            </h3>
+            <p className="text-sm text-slate-600 dark:text-slate-400">
+              AWS Services & Deployment, Azure Deployment
+            </p>
+          </div>
+          <div className="p-4 bg-gradient-to-br from-indigo-50 to-indigo-100/60 dark:from-indigo-950/50 dark:to-slate-900 rounded-lg hover:scale-105 transition-transform border border-indigo-200 dark:border-indigo-800 shadow-sm">
+            <Devices className="text-4xl text-purple-600 dark:text-purple-400 mb-2" />
+            <h3 className="font-bold text-lg mb-1 text-slate-900 dark:text-slate-100">
+              Responsive
+            </h3>
+            <p className="text-sm text-slate-600 dark:text-slate-400">
+              Mobile-First Design
+            </p>
+          </div>
+        </div>
+
+        <div
+          className="flex justify-center mb-6 slide-up"
+          style={{ animationDelay: "0.2s" }}
+        >
+          <div className="p-4 bg-gradient-to-br from-indigo-50 to-indigo-100/60 dark:from-indigo-950/50 dark:to-slate-900 rounded-lg hover:scale-105 transition-transform border border-indigo-200 dark:border-indigo-800 shadow-sm">
+            <Image
+              src="/image/certificate/aws-certificate-badge.png"
+              alt="AWS Certified Developer"
+              width={80}
+              height={80}
+              className="object-contain"
+            />
+            <p className="text-xs mt-2 font-semibold text-slate-700 dark:text-slate-300">
+              AWS Certified
+            </p>
+          </div>
+        </div>
+
+        <div
+          className="flex gap-4 justify-center mb-8 flex-wrap slide-up"
+          style={{ animationDelay: "0.5s" }}
+        >
+          <Link href="/about">
+            <button
+              type="button"
+              className="text-slate-900 dark:text-slate-100 bg-white dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-600 hover:bg-indigo-50 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-indigo-200/50 dark:focus:ring-pink-300/50 font-medium rounded-lg text-sm px-6 py-3 transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-lg"
+              aria-label="Learn more about me"
+            >
+              About Me
+            </button>
+          </Link>
+          <Link href="/projects">
+            <button
+              type="button"
+              className="text-slate-900 dark:text-slate-100 bg-white dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-600 hover:bg-indigo-50 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-indigo-200/50 dark:focus:ring-pink-300/50 font-medium rounded-lg text-sm px-6 py-3 transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-lg"
+              aria-label="View my projects"
+            >
+              View Projects
+            </button>
           </Link>
         </div>
-      </section>
-    </>
+
+        <div className="slide-up" style={{ animationDelay: "0.6s" }}>
+          <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">
+            Let&apos;s Connect
+          </h2>
+          <div className=" flex justify-center ">
+            <ContactCom />
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

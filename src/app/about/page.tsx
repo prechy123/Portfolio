@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <section className="flex flex-col items-center min-h-screen justify-center relative fade-in py-24">
       <div className="md:w-[1000px] max-w-full flex flex-col items-center px-4">
-        <h1 className="text-7xl animate-pulse pb-4 slide-up text-slate-900 dark:text-slate-100">
+        <h1 className="text-7xl animate-pulse pb-4 slide-up text-slate-900">
           Hello{" "}
           <span className="inline-block hover:animate-[wave_0.5s_ease-in-out]">
             <WavingHand className="text-5xl" />
@@ -28,7 +28,7 @@ export default function AboutPage() {
           className="text-justify slide-up"
           style={{ animationDelay: "0.1s" }}
         >
-          <p className="font-bold mb-6 text-slate-800 dark:text-slate-200">
+          <p className="font-bold mb-6 text-slate-800">
             My name is{" "}
             <a
               href="https://x.com/prec__hy?t=eIsHaXmAnhusM5toM8XSPg&s=09"
@@ -46,20 +46,20 @@ export default function AboutPage() {
 
           {/* AWS Certification Section */}
           <div
-            className="my-8 p-6 bg-gradient-to-r from-blue-50/90 to-purple-50/90 dark:from-blue-950/40 dark:to-purple-950/40 rounded-lg slide-up border border-slate-200 dark:border-slate-700 shadow-sm"
+            className="my-8 p-6 bg-slate-50 rounded-lg slide-up border border-slate-200 shadow-sm"
             style={{ animationDelay: "0.2s" }}
           >
             <div className="flex items-center gap-4 mb-2">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <h3 className="text-2xl font-bold font-bold">
                 AWS Certified Developer
               </h3>
             </div>
             <div className="flex flex-col md:flex-row gap-4 items-center">
               <div className="flex-1">
-                <p className="font-semibold mb-2 text-slate-800 dark:text-slate-200">
-                  AWS Certified Developer - Associate
+                <p className="font-semibold mb-2 text-slate-800">
+                  AWS Certified Developer - Practitioner
                 </p>
-                <p className="text-sm text-slate-700 dark:text-slate-400">
+                <p className="text-sm text-slate-700">
                   Validated expertise in developing, deploying, and debugging
                   cloud-based applications using AWS services.
                 </p>
@@ -79,21 +79,19 @@ export default function AboutPage() {
           {/* Professional Experience */}
           <div className="my-8 slide-up" style={{ animationDelay: "0.3s" }}>
             <div className="flex items-center gap-2 mb-6">
-              <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <h3 className="text-3xl font-bold font-bold">
                 Professional Experience
               </h3>
             </div>
 
             {/* RAI Nigeria - Mobile App Engineer */}
-            <div className="mb-6 p-4 bg-white/70 dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700 shadow-sm">
-              <h4 className="text-xl font-bold text-blue-700 dark:text-indigo-400">
-                App Developer
-              </h4>
-              <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
+            <div className="mb-6 p-4 bg-white rounded border border-slate-200 shadow-sm">
+              <h4 className="text-xl font-bold text-blue-700">App Developer</h4>
+              <p className="text-sm text-slate-600 mb-2">
                 Robotics and Artificial Intelligence Nigeria, Ibadan | 2025 -
                 2026
               </p>
-              <ul className="list-disc list-inside space-y-2 text-slate-800 dark:text-slate-300">
+              <ul className="list-disc list-inside space-y-2 text-slate-800">
                 <li>
                   Developed YardCode mobile application using Expo (React
                   Native), a system adopted by over 1,000 Nigerians
@@ -113,14 +111,14 @@ export default function AboutPage() {
             </div>
 
             {/* De Cloud23 Technology Limited */}
-            <div className="mb-6 p-4 bg-white/70 dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700 shadow-sm">
-              <h4 className="text-xl font-bold text-blue-700 dark:text-indigo-400">
+            <div className="mb-6 p-4 bg-white rounded border border-slate-200 shadow-sm">
+              <h4 className="text-xl font-bold text-blue-700">
                 Full-Stack Developer
               </h4>
-              <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
+              <p className="text-sm text-slate-600 mb-2">
                 De Cloud23 Technology Limited, Ibadan | 2025 - 2026
               </p>
-              <ul className="list-disc list-inside space-y-2 text-slate-800 dark:text-slate-300">
+              <ul className="list-disc list-inside space-y-2 text-slate-800">
                 <li>
                   Developed Games for Africa platform, creating engaging games
                   for Africans
@@ -137,14 +135,14 @@ export default function AboutPage() {
             </div>
 
             {/* BDGroups */}
-            <div className="mb-6 p-4 bg-white/70 dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700 shadow-sm">
-              <h4 className="text-xl font-bold text-blue-700 dark:text-indigo-400">
+            <div className="mb-6 p-4 bg-white rounded border border-slate-200 shadow-sm">
+              <h4 className="text-xl font-bold text-blue-700">
                 Full-Stack Developer
               </h4>
-              <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
+              <p className="text-sm text-slate-600 mb-2">
                 BDGroups, Abuja | 2024 - 2026
               </p>
-              <ul className="list-disc list-inside space-y-2 text-slate-800 dark:text-slate-300">
+              <ul className="list-disc list-inside space-y-2 text-slate-800">
                 <li>
                   Developed SnapUs complete application ensuring excellent user
                   experience and scalability
@@ -161,14 +159,14 @@ export default function AboutPage() {
             </div>
 
             {/* Future-X */}
-            <div className="mb-6 p-4 bg-white/70 dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700 shadow-sm">
-              <h4 className="text-xl font-bold text-blue-700 dark:text-indigo-400">
+            <div className="mb-6 p-4 bg-white rounded border border-slate-200 shadow-sm">
+              <h4 className="text-xl font-bold text-blue-700">
                 Frontend Developer
               </h4>
-              <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
+              <p className="text-sm text-slate-600 mb-2">
                 Future-X, Abuja | 2024 - 2026
               </p>
-              <ul className="list-disc list-inside space-y-2 text-slate-800 dark:text-slate-300">
+              <ul className="list-disc list-inside space-y-2 text-slate-800">
                 <li>
                   Enhanced mobile performance by 40% through optimization for
                   responsive design and mobile-first development
@@ -188,18 +186,16 @@ export default function AboutPage() {
           {/* Education */}
           <div className="my-8 slide-up" style={{ animationDelay: "0.4s" }}>
             <div className="flex items-center gap-2 mb-6">
-              <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Education
-              </h3>
+              <h3 className="text-3xl font-bold font-bold">Education</h3>
             </div>
-            <div className="p-4 bg-white/70 dark:bg-slate-800/70 rounded border border-slate-200 dark:border-slate-700 shadow-sm">
-              <h4 className="text-xl font-bold text-blue-700 dark:text-indigo-400">
+            <div className="p-4 bg-white rounded border border-slate-200 shadow-sm">
+              <h4 className="text-xl font-bold text-blue-700">
                 B.Eng. Computer Engineering
               </h4>
-              <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
+              <p className="text-sm text-slate-600 mb-2">
                 Elizade University, Ilara-Mokin | 2019 - 2024
               </p>
-              <ul className="list-disc list-inside space-y-2 text-slate-800 dark:text-slate-300">
+              <ul className="list-disc list-inside space-y-2 text-slate-800">
                 <li>
                   Led the development of high-performance projects, including
                   diverse full-stack applications gaining over 1,000+ active
@@ -215,7 +211,7 @@ export default function AboutPage() {
           </div>
 
           {/* Tech Stack */}
-          <p className="font-bold my-6 text-slate-800 dark:text-slate-200">
+          <p className="font-bold my-6 text-slate-800">
             My everyday tech stack includes{" "}
             <span className="style-text-1">
               Next.js, Nuxt.js, Nest.js, React-Native, Expo, React.js, Vue.js,
@@ -227,11 +223,11 @@ export default function AboutPage() {
             <span className="style-text-1">VS Code as my IDE of choice</span>.
           </p>
 
-          <p className="font-bold my-6 text-slate-800 dark:text-slate-200">
+          <p className="font-bold my-6 text-slate-800">
             My portfolio showcases{" "}
             <Link
               href="/projects"
-              className="underline underline-offset-4 hover:text-purple-600 dark:hover:text-pink-500 transition-colors"
+              className="underline underline-offset-4 hover:font-bold transition-colors"
             >
               <span className="style-text-1">real-world projects</span>
             </Link>{" "}
@@ -239,7 +235,7 @@ export default function AboutPage() {
             solutions that solve real problems.
           </p>
 
-          <p className="font-bold my-6 text-slate-800 dark:text-slate-200">
+          <p className="font-bold my-6 text-slate-800">
             I am passionate about{" "}
             <span className="style-text-1">
               continuous learning, cloud technologies, and building scalable
@@ -254,7 +250,7 @@ export default function AboutPage() {
             developer.
           </p>
 
-          <p className="font-bold my-6 text-slate-800 dark:text-slate-200">
+          <p className="font-bold my-6 text-slate-800">
             <span className="style-text-1">
               Thank you for visiting my portfolio!
             </span>{" "}
@@ -284,7 +280,7 @@ export default function AboutPage() {
         </div>
 
         <h2
-          className="text-5xl animate-pulse mt-8 slide-up text-slate-800 dark:text-slate-200"
+          className="text-5xl animate-pulse mt-8 slide-up text-slate-800"
           style={{ animationDelay: "0.5s" }}
         >
           Let&apos;s Connect

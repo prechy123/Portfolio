@@ -6,25 +6,26 @@ import { Barlow } from "next/font/google";
 import { Provider } from "@/utils/providers";
 
 export const metadata: Metadata = {
-  title: "Bamidele - Home",
+  title: "Bamidele Ayomide Precious - Senior Full Stack Developer",
   description:
-    "Hello, I am Bamidele Ayomide Precious a Full Stack developer, and visit to explore a range of real-world projects.",
+    "AWS Certified Senior Full Stack Developer with 5+ years of experience building scalable web and mobile applications. Specialized in React, React Native, Node.js, and cloud deployments.",
   keywords:
-    "Bamidele, Bamidele Ayomide, Bamidele Precious, Bamidele Ayomide Precious, Bamidele Ayomide Portfolio, Bamidele Precious Portfolio, Full Stack Portfolio,",
+    "Bamidele Ayomide Precious, Senior Full Stack Developer, AWS Certified Developer, React Native Developer, Node.js Developer, Full Stack Engineer, Mobile App Developer, Cloud Engineer",
   authors: [{ name: "Bamidele Ayomide Precious" }],
   creator: "Bamidele Ayomide Precious",
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "Bamidele Ayomide Precious - Full Stack Developer",
+    title: "Bamidele Ayomide Precious - Senior Full Stack Developer",
     description:
-      "Full Stack Developer specializing in MERN Stack. Explore my portfolio of real-world projects.",
-    siteName: "Bamidele Portfolio",
+      "AWS Certified Senior Full Stack Developer with 5+ years of experience. Specialized in building scalable applications with React, React Native, and Node.js.",
+    siteName: "Bamidele Ayomide Precious",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bamidele Ayomide Precious - Full Stack Developer",
-    description: "Full Stack Developer specializing in MERN Stack",
+    title: "Bamidele Ayomide Precious - Senior Full Stack Developer",
+    description:
+      "AWS Certified Full Stack Developer | React | React Native | Node.js | Cloud",
     creator: "@prec__hy",
   },
 };
@@ -73,8 +74,7 @@ export default function RootLayout({
         <link rel="manifest" href="/image/site.webmanifest" />
       </head>
       <body
-        className={`${barlow.className} bg-slate-300 text-slate-900 dark:bg-slate-950 dark:text-slate-100 custom-scrollbar`}
-        suppressHydrationWarning
+        className={`${barlow.className} bg-white text-slate-900 custom-scrollbar`}
       >
         <Provider>
           <Header />

@@ -2,7 +2,7 @@
 
 import { Project, projects } from "@/app/projectsContents";
 const ProjectGallery = lazy(
-  () => import("@/components/projectCom/ProjectGallery")
+  () => import("@/components/projectCom/ProjectGallery"),
 );
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import Link from "next/link";
@@ -18,35 +18,41 @@ export default function ProjectPage({ params }: { params: Params }) {
   }, [routeId]);
 
   return (
-    <section className="flex flex-col items-center min-h-screen relative fade-in">
-      <div className="md:w-[600px] flex flex-col items-center">
+    <section className="flex flex-col items-center min-h-screen relative fade-in py-24">
+      <div className="md:w-[600px] flex flex-col items-center px-4">
         <Link
           href="/projects"
-          className="self-start mb-4 flex items-center gap-2 hover:text-pink-500 transition-colors link-hover"
+          className="self-start mb-4 flex items-center gap-2 hover:font-bold transition-colors link-hover text-slate-700"
           aria-label="Go back to projects"
         >
           <ArrowBack /> Back to Projects
         </Link>
 
-        <h1 className="text-5xl mb-2 slide-up bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">
+        <h1 className="text-5xl mb-2 slide-up font-bold font-bold">
           {currentProject?.name}
         </h1>
 
-        <p className="text-justify slide-up" style={{ animationDelay: "0.1s" }}>
+        <p
+          className="text-justify slide-up text-slate-700"
+          style={{ animationDelay: "0.1s" }}
+        >
           {currentProject?.description}
         </p>
 
         <div className="slide-up" style={{ animationDelay: "0.2s" }}>
-          <h2 className="pt-1 font-semibold">Technologies Used: </h2>
-          {currentProject?.stacks.map((stack, index) => (
-            <span
-              key={stack}
-              className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent font-bold"
-            >
-              {stack}
-              {index === currentProject?.stacks.length - 1 ? "" : " - "}
-            </span>
-          ))}
+          <h2 className="pt-1 font-semibold text-slate-900">
+            Technologies Used:{" "}
+          </h2>
+          <div className="flex flex-wrap gap-2 mt-2">
+            {currentProject?.stacks.map((stack) => (
+              <span
+                key={stack}
+                className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded"
+              >
+                {stack}
+              </span>
+            ))}
+          </div>
         </div>
 
         {currentProject?.hostedLink && currentProject?.githubLink && (
@@ -61,7 +67,7 @@ export default function ProjectPage({ params }: { params: Params }) {
             >
               <button
                 type="button"
-                className="text-white bg-gradient-to-r from-indigo-500 to-pink-500 hover:from-indigo-600 hover:to-pink-600 focus:outline-none focus:ring-4 focus:ring-pink-300 font-medium rounded-lg text-sm px-5 py-2.5 transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-lg"
+                className="text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 transition-all duration-300 hover:shadow-lg"
                 aria-label={`Visit ${currentProject.name} live site`}
               >
                 Visit Site
@@ -74,7 +80,7 @@ export default function ProjectPage({ params }: { params: Params }) {
             >
               <button
                 type="button"
-                className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 transition-all duration-300 hover:scale-105 active:scale-95 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 hover:shadow-lg"
+                className="text-white bg-slate-800 hover:bg-slate-900 focus:outline-none focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 transition-all duration-300 hover:shadow-lg"
                 aria-label={`View ${currentProject.name} on GitHub`}
               >
                 Visit GitHub
@@ -93,7 +99,7 @@ export default function ProjectPage({ params }: { params: Params }) {
                 <div className="flex justify-center items-center py-12">
                   <svg
                     aria-hidden="true"
-                    className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-pink-500"
+                    className="w-8 h-8 text-slate-200 animate-spin fill-blue-600"
                     viewBox="0 0 100 101"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +113,7 @@ export default function ProjectPage({ params }: { params: Params }) {
                       fill="currentFill"
                     />
                   </svg>
-                  <span className="ml-3 text-gray-600 dark:text-gray-400">
+                  <span className="ml-3 text-slate-600">
                     Loading gallery...
                   </span>
                 </div>

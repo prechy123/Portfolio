@@ -1,72 +1,135 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { MaterialUISwitch } from "../ui/ThemeSwitch";
-import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
-const paths = [
-  { link: "/", pathname: "HOME" },
-  { link: "/projects", pathname: "PROJECTS" },
-  { link: "/about", pathname: "ABOUT" },
+const sections = [
+  { id: "summary", label: "About" },
+  { id: "skills", label: "Skills" },
+  { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
+  { id: "education", label: "Education" },
+  { id: "contact", label: "Contact" },
 ];
 
 export default function Header() {
-  const { theme, setTheme } = useTheme();
-  const pathname = usePathname();
-  const [mounted, setMounted] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => setMounted(true), []);
+  const [activeSection, setActiveSection] = useState("summary");
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
+
+      // Detect active section
+      const sectionOffsets = sections.map((section) => {
+        const element = document.getElementById(section.id);
+        return {
+          id: section.id,
+          offset: element?.offsetTop ?? 0,
+        };
+      });
+
+      const scrollPosition = window.scrollY + 100;
+      const active = sectionOffsets.reduce((acc, curr) => {
+        if (scrollPosition >= curr.offset) return curr.id;
+        return acc;
+      }, "summary");
+
+      setActiveSection(active);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  if (!mounted) return null;
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offset = 80;
+      const elementPosition = element.offsetTop - offset;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <nav
-      className={`sticky top-2 z-10 transition-all duration-300 ${
-        scrolled ? "scale-95" : "scale-100"
+      className={`sticky top-0 z-50 transition-all duration-300 bg-white border-b border-slate-200 no-print ${
+        scrolled ? "shadow-sm" : ""
       }`}
     >
-      <div className="justify-around items-center mt-6 hidden sm:flex backdrop:blur-lg">
-        <div
-          className={`border-4 border-slate-700 dark:border-slate-300 skew-x-12 inline-flex gap-12 w-auto bg-white/90 dark:bg-slate-800/90 backdrop-blur-lg rounded p-1 transition-all duration-300 shadow-md ${
-            scrolled ? "shadow-lg shadow-indigo-500/20" : ""
-          }`}
-        >
-          {paths.map((path) => {
-            // alert(pathname)
-            const isActive = path.link === pathname ? true : path.link === "/projects" && pathname.startsWith("/project") ? true : false;
-            const navMenuClass = isActive
-              ? "bg-indigo-100 text-slate-900 dark:bg-indigo-900 dark:text-slate-100"
-              : "text-slate-700 dark:text-slate-200";
-            return (
-              <Link
-                className={navMenuClass}
-                href={path.link}
-                key={path.link}
-                aria-label={`Navigate to ${path.pathname}`}
-                aria-current={isActive ? "page" : undefined}
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="flex justify-between items-center h-16">
+          {/* Name/Logo */}
+          <button
+            onClick={() => scrollToSection("summary")}
+            className="text-lg font-bold text-slate-900 hover:font-bold transition-colors"
+          >
+            Bamidele Ayomide Precious
+          </button>
+
+          {/* Navigation Links */}
+          <div className="hidden md:flex gap-1">
+            {sections.map((section) => (
+              <button
+                key={section.id}
+                onClick={() => scrollToSection(section.id)}
+                className={`nav-menu ${
+                  activeSection === section.id
+                    ? "font-bold bg-slate-50"
+                    : "text-slate-600"
+                }`}
+                aria-label={`Navigate to ${section.label} section`}
               >
-                <div className="nav-menu">{path.pathname}</div>
-              </Link>
-            );
-          })}
+                {section.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-slate-600 hover:font-bold"
+            onClick={() => {
+              const mobileMenu = document.getElementById("mobile-menu");
+              mobileMenu?.classList.toggle("hidden");
+            }}
+            aria-label="Toggle mobile menu"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
         </div>
-        <div className="transition-all duration-300 hover:scale-110">
-          <MaterialUISwitch
-            checked={theme === "dark" ? true : false}
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
-          />
+
+        {/* Mobile Menu */}
+        <div id="mobile-menu" className="hidden md:hidden pb-4">
+          {sections.map((section) => (
+            <button
+              key={section.id}
+              onClick={() => {
+                scrollToSection(section.id);
+                document.getElementById("mobile-menu")?.classList.add("hidden");
+              }}
+              className={`block w-full text-left px-4 py-2 text-sm rounded ${
+                activeSection === section.id
+                  ? "font-bold bg-slate-50"
+                  : "text-slate-600 hover:bg-slate-50"
+              }`}
+            >
+              {section.label}
+            </button>
+          ))}
         </div>
       </div>
     </nav>

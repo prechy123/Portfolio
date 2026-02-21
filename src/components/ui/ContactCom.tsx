@@ -1,49 +1,35 @@
-import {
-  GitHub,
-  Instagram,
-  LinkedIn,
-  Mail,
-  Twitter,
-} from "@mui/icons-material";
+import { GitHub, LinkedIn, Mail, Phone } from "@mui/icons-material";
 
 export default function ContactCom() {
   return (
-    <div className="flex gap-2 slide-up" style={{ animationDelay: "0.2s" }}>
+    <div className="flex gap-4 justify-center items-center flex-wrap">
       <a
         href="https://github.com/prechy123"
         target="_blank"
         rel="noopener noreferrer"
-        className="pt-1 hover:pt-0 link-hover transition-all"
+        className="icon-hover"
         aria-label="Visit my GitHub profile"
       >
-        <GitHub />
+        <GitHub className="w-6 h-6" />
       </a>
       <a
-        href="https://www.linkedin.com/in/ayomide-bamidele-347573275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        href="https://www.linkedin.com/in/ayomide-bamidele-347573275"
         target="_blank"
         rel="noopener noreferrer"
-        className="pt-1 hover:pt-0 link-hover transition-all"
+        className="icon-hover"
         aria-label="Connect with me on LinkedIn"
       >
-        <LinkedIn />
+        <LinkedIn className="w-6 h-6" />
       </a>
       <a
-        href="https://www.instagram.com/qvkdpwbr?igsh=dDZ0M25ybGVobXZq&utm_source=qr"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="pt-1 hover:pt-0 link-hover transition-all"
-        aria-label="Follow me on Instagram"
-      >
-        <Instagram />
-      </a>
-      <a
-        href="mailto:bamideleayomideprecious@yahoo.com?body=Hi,%20My%20name%20is%20"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="pt-1 hover:pt-0 link-hover transition-all"
+        href="mailto:bamideleayomideprecious@yahoo.com"
+        className="icon-hover"
         aria-label="Send me an email"
       >
-        <Mail />
+        <Mail className="w-6 h-6" />
+      </a>
+      <a href="tel:+2348106653031" className="icon-hover" aria-label="Call me">
+        <Phone className="w-6 h-6" />
       </a>
     </div>
   );

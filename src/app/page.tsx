@@ -15,7 +15,7 @@ export default function Home() {
             Bamidele Ayomide Precious
           </h1>
           <p className="text-xl md:text-2xl font-bold font-semibold mb-4">
-            Software Developer
+            Computer Engineer
           </p>
           <div className="flex justify-center mb-6">
             <Image
@@ -212,7 +212,7 @@ export default function Home() {
             <div className="flex justify-between items-start mb-3">
               <div>
                 <h3 className="text-xl font-bold text-slate-900">
-                  Full-Stack Developer
+                  Software Developer
                 </h3>
                 <p className="font-bold font-semibold">
                   De Cloud23 Technology Limited
@@ -257,7 +257,7 @@ export default function Home() {
             <div className="flex justify-between items-start mb-3">
               <div>
                 <h3 className="text-xl font-bold text-slate-900">
-                  Full-Stack Developer
+                  Software Developer
                 </h3>
                 <p className="font-bold font-semibold">BDGroups</p>
               </div>

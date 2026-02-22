@@ -30,8 +30,8 @@ export const projects: Project[] = [
     stacks: ["NextJs", "MongoDB", "PostgresDB", "Azure", "Python + Fast API", "Llama", "Pinecone"],
     description:
       "SharpChat AI is an intelligent, multi-tenant whatsapp chatbot platform specifically engineered for Small and Medium Enterprises (SMEs) in Nigeria. By combining WhatsApp integration with AI agent.",
-    hostedLink: "https://rain-meta-hack-web.vercel.app",
-    githubLink: "https://rain-meta-hack-web.vercel.app",
+    hostedLink: "https://www.alatchat.com/",
+    githubLink: "https://www.alatchat.com/",
     images: [
       "/image/projects/sharpchat/1.png",
       "/image/projects/sharpchat/2.png",

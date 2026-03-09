@@ -15,26 +15,19 @@ export default function Home() {
             Bamidele Ayomide Precious
           </h1>
           <p className="text-xl md:text-2xl font-bold font-semibold mb-4">
-            Computer Engineer
+            Software Engineer
           </p>
-          <div className="flex justify-center mb-6">
-            <Image
-              src="/image/certificate/aws-certificate-badge.png"
-              alt="AWS Certified Developer"
-              width={80}
-              height={80}
-              className="object-contain"
-            />
-          </div>
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <p className="text-lg text-slate-700 leading-relaxed mb-6">
-            A computer engineering graduate of Elizade University, Ilara-Mokin,
-            Ondo State.<br />I am a Software Developer with over five years of
-            experience in frontend, backend, mobile, and cloud development. My
-            core skills include ReactJS, VueJS, NextJS, NuxtJS, Python, Flask,
-            NodeJS, NestJS, React Native, Expo, Azure, and AWS.
+          <p className="text-lg text-slate-700 leading-relaxed mb-6 text-justify">
+            A Software Engineer with proven expertise spanning front-end,
+            back-end, and mobile development. Certified in AWS with a strong
+            foundation in building highly available systems and integrating
+            advanced artificial intelligence, DevOps, and cloud computing
+            technologies. Recognized for the ability to lead diverse technical
+            teams, quickly adapt to modern frameworks, and deliver user-centric
+            software that solves complex business challenges.
           </p>
         </div>
       </section>
@@ -145,31 +138,27 @@ export default function Home() {
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Contributed to YardCode platform development, a system adopted
-                  by over 1,000 Nigerians.
+                  Facilitated platform adoption, as measured by a user base of
+                  over 1,000 Nigerians, by contributing to the YardCode platform
+                  development.
                 </span>
               </li>
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Participated in the <strong>MetaXRain program</strong>,
-                  leveraging Llama AI models to drive business growth and
-                  innovation
+                  Drove business growth, by the successful design and deployment
+                  of a system for customers to chat with a business over
+                  Whatsapp by utilizing llama models.
                 </span>
               </li>
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Designed and deployed an{" "}
-                  <strong>AI-driven intrusion detection system</strong>{" "}
-                  enhancing security infrastructure
-                </span>
-              </li>
-              <li className="flex">
-                <span className="mr-2 font-bold">•</span>
-                <span>
-                  Collaborated with cross-functional teams on software design,
-                  testing, and deployment using Agile methodologies
+                  Streamlined release cycles and maintained high software
+                  quality, as measured by consistent cross-functional team
+                  output , by collaborating within an Agile environment to
+                  design, test, and deploy code via Git and GitHub Actions CI/CD
+                  pipelines.
                 </span>
               </li>
             </ul>
@@ -193,15 +182,19 @@ export default function Home() {
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Built and improved features for the Circool platform, focused
-                  on performance and user experience.
+                  Improved performance and user experience for the Circool
+                  platform, as measured by faster feature load times, by
+                  building and refining UI features with React Native and
+                  TypeScript.
                 </span>
               </li>
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Developed and maintained core modules for the Solarcorp
-                  platform, supporting scalability and reliability.
+                  Ensured platform scalability and reliability, supporting
+                  consistent system operations, by developing and maintaining
+                  core modules for the Solarcorp platform using NestJS and
+                  MongoDB.
                 </span>
               </li>
             </ul>
@@ -227,26 +220,18 @@ export default function Home() {
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Developed <strong>Games for Africa platform</strong>, creating
-                  engaging multiplayer games tailored for African audiences
+                  Expanded regional digital entertainment, successfully
+                  delivering interactive content for Africans, by contributing
+                  to the Games4Africa platform development.
                 </span>
               </li>
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Contributed to <strong>Zheeta project</strong>, implementing
-                  responsive UI components and optimizing user experience across
-                  devices
-                </span>
-              </li>
-              <li className="flex">
-                <span className="mr-2 font-bold">•</span>
-                <span>
-                  Delivered user-centric designs with focus on{" "}
-                  <strong>
-                    accessibility, performance optimization, and cross-browser
-                    compatibility
-                  </strong>
+                  Optimized the Zheeta project's user experience, achieving high
+                  availability and cross-browser compatibility, by implementing
+                  responsive UI components and delivering user-centric designs
+                  with React and TailwindCSS.
                 </span>
               </li>
             </ul>
@@ -270,24 +255,19 @@ export default function Home() {
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Developed <strong>SnapUs complete application</strong>{" "}
-                  (mobile, web, and backend) ensuring excellent user experience
-                  and scalability
+                  Delivered a complete and scalable event photo-sharing
+                  application, ensuring a seamless user experience, by
+                  developing the SnapUs mobile application front-end with React
+                  Native.
                 </span>
               </li>
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Built and deployed{" "}
-                  <strong>SnapUs server on AWS using Fargate</strong> serverless
-                  architecture, achieving high availability and cost efficiency
-                </span>
-              </li>
-              <li className="flex">
-                <span className="mr-2 font-bold">•</span>
-                <span>
-                  Implemented cloud-native solutions for optimal performance and
-                  cost efficiency using AWS services (S3, Lambda, RDS)
+                  Achieved a highly available backend infrastructure, supporting
+                  concurrent user traffic, by developing the SnapUs server with
+                  NestJS and hosting it on AWS using Fargate serverless
+                  containers.
                 </span>
               </li>
             </ul>
@@ -311,26 +291,24 @@ export default function Home() {
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Enhanced mobile performance by{" "}
-                  <strong className="font-bold">40%</strong> through
-                  optimization for responsive design and mobile-first
-                  development
+                  Enhanced mobile performance, as measured by a 40% improvement,
+                  by optimizing for responsive design and executing mobile-first
+                  development using TypeScript.
                 </span>
               </li>
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Reduced front-end bugs by{" "}
-                  <strong className="font-bold">50%</strong> by implementing
-                  robust Nuxt.js error handling and comprehensive testing
-                  strategies
+                  Reduced front-end bugs, as measured by a 50% decrease and by
+                  implementing robust error handling.
                 </span>
               </li>
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Improved code maintainability and team collaboration through
-                  clean coding practices and thorough documentation
+                  Improved team collaboration and code maintainability,
+                  accelerating the development process, by instituting clean
+                  coding practices and Git version control workflows.
                 </span>
               </li>
             </ul>
@@ -404,7 +382,7 @@ export default function Home() {
 
       {/* Education & Certifications Section */}
       <section id="education" className="section-container">
-        <h2 className="section-title">Education & Certifications</h2>
+        <h2 className="section-title">Certifications</h2>
 
         <div className="space-y-6">
           {/* AWS Certification */}
@@ -433,46 +411,29 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Education */}
           <div className="professional-card">
-            <div className="flex justify-between items-start mb-3">
-              <div>
-                <h3 className="text-xl font-bold text-slate-900">
-                  Bachelor of Engineering in Computer Engineering
+            <div className="flex items-start gap-4">
+              <Image
+                src="/image/certificate/metaxrain.jpeg"
+                alt="META Certification"
+                width={80}
+                height={80}
+                className="object-contain flex-shrink-0"
+              />
+              <div className="flex-1">
+                <h3 className="text-xl font-bold text-slate-900 mb-1">
+                  AI AGENTS AND AGENTIC AI SYSTEMS DEVELOPMENT
                 </h3>
-                <p className="font-bold font-semibold">Elizade University</p>
+                <p className="font-bold font-semibold mb-2">META</p>
+                <p className="text-slate-700">
+                  Mastered the development of Agentic AI systems and
+                  Retrieval-Augmented Generation (RAG) using LangChain, PyTorch,
+                  and Llama, while implementing advanced prompt engineering
+                  frameworks and model fine-tuning techniques (LoRA/QLoRA) to
+                  build scalable, tool-integrated applications.
+                </p>
               </div>
-              <span className="text-sm text-slate-600 font-medium">
-                2019 - 2024
-              </span>
             </div>
-            <p className="text-sm text-slate-600 mb-3">Ilara-Mokin, Nigeria</p>
-            <ul className="space-y-2 text-slate-700">
-              <li className="flex">
-                <span className="mr-2 font-bold">•</span>
-                <span>
-                  Graduated with <strong>Upper Honours</strong>
-                </span>
-              </li>
-              <li className="flex">
-                <span className="mr-2 font-bold">•</span>
-                <span>
-                  Led development of high-performance projects, including
-                  diverse full-stack applications gaining{" "}
-                  <strong className="font-bold">
-                    over 1,000+ active users
-                  </strong>
-                </span>
-              </li>
-              <li className="flex">
-                <span className="mr-2 font-bold">•</span>
-                <span>
-                  Collaborated in Hackathons, developing a{" "}
-                  <strong>peer-to-peer lending platform</strong> with credit
-                  scoring and dispute resolution
-                </span>
-              </li>
-            </ul>
           </div>
         </div>
       </section>

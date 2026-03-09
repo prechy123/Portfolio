@@ -228,7 +228,7 @@ export default function Home() {
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Optimized the Zheeta project's user experience, achieving high
+                  Optimized the Zheeta project user experience, achieving high
                   availability and cross-browser compatibility, by implementing
                   responsive UI components and delivering user-centric designs
                   with React and TailwindCSS.

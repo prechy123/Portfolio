@@ -8,9 +8,9 @@ interface TypingAnimationProps {
 
 const TypingAnimation = ({ texts }: TypingAnimationProps) => {
   const defaultTexts = [
-    "Full Stack Developer",
-    "App Developer",
-    "AWS Certified Developer",
+    "Backend Engineer",
+    "NestJS & TypeScript",
+    "AWS Certified Cloud Practitioner",
     "AWS & Azure Enthusiast",
     "AI Developer"
   ];

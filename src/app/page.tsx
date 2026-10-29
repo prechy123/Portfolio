@@ -15,19 +15,19 @@ export default function Home() {
             Bamidele Ayomide Precious
           </h1>
           <p className="text-xl md:text-2xl font-bold font-semibold mb-4">
-            Software Engineer
+            Backend Engineer
           </p>
         </div>
 
         <div className="max-w-3xl mx-auto">
           <p className="text-lg text-slate-700 leading-relaxed mb-6 text-justify">
-            A Software Engineer with proven expertise spanning front-end,
-            back-end, and mobile development. Certified in AWS with a strong
-            foundation in building highly available systems and integrating
-            advanced artificial intelligence, DevOps, and cloud computing
-            technologies. Recognized for the ability to lead diverse technical
-            teams, quickly adapt to modern frameworks, and deliver user-centric
-            software that solves complex business challenges.
+            Backend Engineer with 4+ years building production APIs for
+            consumer apps in TypeScript and NestJS, on MongoDB, PostgreSQL and
+            Redis, deployed to AWS with Docker, Fargate and Terraform. Currently
+            runs a platform serving 5k+ users at 99.99% uptime. Shipped
+            real-time audio and video (Agora WebRTC) built for poor networks,
+            resumable S3 media uploads, and native Swift and Kotlin SDKs. Has
+            delivered backend architectures for 10+ client organisations.
           </p>
         </div>
       </section>
@@ -39,75 +39,75 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="professional-card">
             <h3 className="text-lg font-semibold text-slate-900 mb-3">
-              Frontend Development
-            </h3>
-            <p className="text-slate-700">
-              <span className="font-medium">Expert:</span> React.js, Next.js,
-              Vue.js, Nuxt.js, TypeScript, JavaScript
-            </p>
-            <p className="text-slate-700 mt-2">
-              <span className="font-medium">Styling:</span> Tailwind CSS, SCSS,
-              Material-UI, Framer Motion
-            </p>
-          </div>
-
-          <div className="professional-card">
-            <h3 className="text-lg font-semibold text-slate-900 mb-3">
-              Mobile Development
-            </h3>
-            <p className="text-slate-700">
-              <span className="font-medium">Platforms:</span> React Native, Expo
-            </p>
-            <p className="text-slate-700 mt-2">
-              <span className="font-medium">Deployment:</span> iOS & Android
-              deployment, App Store optimization
-            </p>
-          </div>
-
-          <div className="professional-card">
-            <h3 className="text-lg font-semibold text-slate-900 mb-3">
               Backend Development
             </h3>
             <p className="text-slate-700">
-              <span className="font-medium">Node.js:</span> Express.js, Nest.js,
-              RESTful APIs, WebSocket
+              <span className="font-medium">Languages:</span> TypeScript,
+              JavaScript, Java, Python, SQL, C#, C++
             </p>
             <p className="text-slate-700 mt-2">
-              <span className="font-medium">Python:</span> Flask, Fast API
+              <span className="font-medium">Frameworks:</span> NestJS, Node.js,
+              Express, FastAPI, Django, Flask, ASP.NET
+            </p>
+            <p className="text-slate-700 mt-2">
+              <span className="font-medium">APIs:</span> REST, WebSockets,
+              Webhooks, JWT Auth, RBAC, Rate Limiting
             </p>
           </div>
 
           <div className="professional-card">
             <h3 className="text-lg font-semibold text-slate-900 mb-3">
-              Databases & Cloud
+              Databases & Real-Time
             </h3>
             <p className="text-slate-700">
               <span className="font-medium">Databases:</span> MongoDB,
-              PostgreSQL, Pinecone
+              PostgreSQL, Redis, Mongoose, Prisma
             </p>
             <p className="text-slate-700 mt-2">
-              <span className="font-medium">Cloud:</span> AWS (Fargate, Lambda,
-              S3, EC2), Azure, Serverless Architecture
+              <span className="font-medium">Real-Time:</span> WebRTC, Agora
+              RTC, Agora Signalling, Agora Interactive Whiteboard
             </p>
           </div>
 
           <div className="professional-card">
             <h3 className="text-lg font-semibold text-slate-900 mb-3">
-              AI & Machine Learning
+              Cloud & DevOps
             </h3>
             <p className="text-slate-700">
-              Llama Models, AI Chatbots, Vector Databases, Pinecone, AI-driven
-              Solutions
+              <span className="font-medium">Cloud:</span> AWS (S3, EC2, ECS,
+              Fargate), Azure
+            </p>
+            <p className="text-slate-700 mt-2">
+              <span className="font-medium">DevOps:</span> Terraform, Docker,
+              CI/CD, GitHub Actions, Git, Prometheus, Grafana
             </p>
           </div>
 
           <div className="professional-card">
             <h3 className="text-lg font-semibold text-slate-900 mb-3">
-              Tools & DevOps
+              Testing & API Tools
             </h3>
             <p className="text-slate-700">
-              Git/GitHub, VS Code, macOS & Ubuntu, CI/CD, Docker, Performance
-              Optimization
+              Jest, Unit Tests, End-to-End (E2E) Tests, Postman, Swagger
+              (OpenAPI), Thunder Client
+            </p>
+          </div>
+
+          <div className="professional-card">
+            <h3 className="text-lg font-semibold text-slate-900 mb-3">
+              AI
+            </h3>
+            <p className="text-slate-700">
+              LangChain, LangGraph, AI Agents, RAG, Pinecone
+            </p>
+          </div>
+
+          <div className="professional-card">
+            <h3 className="text-lg font-semibold text-slate-900 mb-3">
+              Frontend & Mobile
+            </h3>
+            <p className="text-slate-700">
+              React Native, Expo, React, Next.js
             </p>
           </div>
         </div>
@@ -118,6 +118,68 @@ export default function Home() {
         <h2 className="section-title">Professional Experience</h2>
 
         <div className="space-y-6">
+          {/* SolarCorp */}
+          <div className="professional-card">
+            <div className="flex justify-between items-start mb-3">
+              <div>
+                <h3 className="text-xl font-bold text-slate-900">
+                  Software Developer
+                </h3>
+                <p className="font-bold font-semibold">SolarCorp Technologies Limited</p>
+              </div>
+              <span className="text-sm text-slate-600 font-medium">
+                February 2026 - Present
+              </span>
+            </div>
+            <p className="text-sm text-slate-600 mb-3">Lagos, Nigeria (Remote)</p>
+            <ul className="space-y-2 text-slate-700">
+              <li className="flex">
+                <span className="mr-2 font-bold">•</span>
+                <span>
+                  Develop and maintain core backend modules for the SolarCorp
+                  platform using NestJS, Redis and MongoDB, serving 5k+ users at
+                  99.99% uptime.
+                </span>
+              </li>
+              <li className="flex">
+                <span className="mr-2 font-bold">•</span>
+                <span>
+                  Built daily and monthly active user counts, and unique click
+                  counts for the SolarCorp URL shortener, on Redis HyperLogLog,
+                  giving near-exact unique counts in fixed, minimal memory.
+                </span>
+              </li>
+              <li className="flex">
+                <span className="mr-2 font-bold">•</span>
+                <span>
+                  Building Circool Traq, a multi-tenant asset-financing and
+                  repayment platform for lenders and installation partners
+                  (NestJS, MongoDB, Next.js), with role-based access across
+                  lender, partner and admin workspaces, audit logging, rate
+                  limiting and JWT sessions with refresh-token rotation and
+                  reuse detection.
+                </span>
+              </li>
+              <li className="flex">
+                <span className="mr-2 font-bold">•</span>
+                <span>
+                  Implemented Docker containerisation and AWS deployment
+                  pipelines, with infrastructure provisioned as code using
+                  Terraform, cutting environment configuration errors and
+                  shortening the sprint-to-production cycle.
+                </span>
+              </li>
+              <li className="flex">
+                <span className="mr-2 font-bold">•</span>
+                <span>
+                  Integrated Circool AI (LangGraph) into the onboarding
+                  pipeline, achieving a 2x increase in product activation and
+                  reducing manual support tickets.
+                </span>
+              </li>
+            </ul>
+          </div>
+
           {/* RAI Nigeria */}
           <div className="professional-card">
             <div className="flex justify-between items-start mb-3">
@@ -125,190 +187,128 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-slate-900">
                   Software Developer
                 </h3>
-                <p className="font-bold font-semibold">
-                  Robotics and Artificial Intelligence Nigeria
-                </p>
+                <p className="font-bold font-semibold">Robotics and Artificial Intelligence Nigeria (RAIN)</p>
               </div>
               <span className="text-sm text-slate-600 font-medium">
-                2025 - Present
+                February 2025 - February 2026
               </span>
             </div>
-            <p className="text-sm text-slate-600 mb-3">Ibadan, Nigeria</p>
+            <p className="text-sm text-slate-600 mb-3">Ibadan, Nigeria (Remote)</p>
             <ul className="space-y-2 text-slate-700">
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Facilitated platform adoption, as measured by a user base of
-                  over 1,000 Nigerians, by contributing to the YardCode platform
-                  development.
+                  Built a digital learning platform for AI and Robotics courses
+                  with a NestJS and MongoDB API and a Next.js web app, covering
+                  programmes, courses, cohorts, assessments and a community
+                  space.
                 </span>
               </li>
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Drove business growth, by the successful design and deployment
-                  of a system for customers to chat with a business over
-                  Whatsapp by utilizing llama models.
+                  Built resumable file uploads direct to AWS S3 (multipart,
+                  pre-signed URLs) with automatic retry on poor networks, resume
+                  after page reload and server-side verification of received
+                  parts, plus ClamAV malware scanning before any file is saved.
                 </span>
               </li>
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Streamlined release cycles and maintained high software
-                  quality, as measured by consistent cross-functional team
-                  output , by collaborating within an Agile environment to
-                  design, test, and deploy code via Git and GitHub Actions CI/CD
-                  pipelines.
+                  Integrated Agora WebRTC for live classes with screen sharing,
+                  an interactive whiteboard, in-class chat, raised hands,
+                  captions and attendance tracking.
+                </span>
+              </li>
+              <li className="flex">
+                <span className="mr-2 font-bold">•</span>
+                <span>
+                  Engineered poor-network handling for live classes: adaptive
+                  video quality driven by real-time network reports, audio
+                  prioritised over video, audio-only and low-resolution stream
+                  fallback, automatic reconnection and a data-saver mode.
+                </span>
+              </li>
+              <li className="flex">
+                <span className="mr-2 font-bold">•</span>
+                <span>
+                  For YardCode, an address-verification service, designed and
+                  shipped native iOS (Swift) and Android (Kotlin) SDKs that let
+                  third-party apps run real-time address validation, and grew
+                  adoption to 3k+ active users.
+                </span>
+              </li>
+              <li className="flex">
+                <span className="mr-2 font-bold">•</span>
+                <span>
+                  Architected a WhatsApp-integrated AI agent with Llama 3 and
+                  LangChain, automating customer engagement and increasing lead
+                  conversion by 300%.
                 </span>
               </li>
             </ul>
           </div>
 
-          {/* SolarcoprTech */}
+          {/* Freelance and Contract */}
           <div className="professional-card">
             <div className="flex justify-between items-start mb-3">
               <div>
                 <h3 className="text-xl font-bold text-slate-900">
-                  Software Developer
+                  Backend Developer (Part-time)
                 </h3>
-                <p className="font-bold font-semibold">SolarcorpTech</p>
+                <p className="font-bold font-semibold">Freelance and Contract</p>
               </div>
               <span className="text-sm text-slate-600 font-medium">
-                January 2025 - Present
+                January 2024 - January 2026
               </span>
             </div>
-            <p className="text-sm text-slate-600 mb-3">Lagos, Nigeria</p>
+            <p className="text-sm text-slate-600 mb-3">Abuja, Nigeria (Remote)</p>
             <ul className="space-y-2 text-slate-700">
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Improved performance and user experience for the Circool
-                  platform, as measured by faster feature load times, by
-                  building and refining UI features with React Native and
-                  TypeScript.
+                  Designed, built and deployed custom backend architectures, and
+                  the web and mobile apps on top of them, for 10+ client
+                  organisations, from data model and API design through
+                  deployment.
                 </span>
               </li>
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Ensured platform scalability and reliability, supporting
-                  consistent system operations, by developing and maintaining
-                  core modules for the Solarcorp platform using NestJS and
-                  MongoDB.
+                  De Cloud23 Technology Limited (contract, February 2025 -
+                  January 2026): built and maintained ASP.NET (C#) backend
+                  services and APIs for the Games4Africa and Zheeta platforms,
+                  refactored legacy codebases into modular architectures, and
+                  monitored the services with Prometheus and Grafana dashboards.
                 </span>
               </li>
             </ul>
           </div>
 
-          {/* De Cloud23 */}
+          {/* Teckplus Digital Solutions */}
           <div className="professional-card">
             <div className="flex justify-between items-start mb-3">
               <div>
                 <h3 className="text-xl font-bold text-slate-900">
-                  Software Developer
+                  Software Engineer
                 </h3>
-                <p className="font-bold font-semibold">
-                  De Cloud23 Technology Limited
-                </p>
+                <p className="font-bold font-semibold">Teckplus Digital Solutions</p>
               </div>
               <span className="text-sm text-slate-600 font-medium">
-                2025 - 2026
+                June 2022 - January 2024
               </span>
             </div>
-            <p className="text-sm text-slate-600 mb-3">Ibadan, Nigeria</p>
+            <p className="text-sm text-slate-600 mb-3">Abuja, Nigeria (Remote)</p>
             <ul className="space-y-2 text-slate-700">
               <li className="flex">
                 <span className="mr-2 font-bold">•</span>
                 <span>
-                  Expanded regional digital entertainment, successfully
-                  delivering interactive content for Africans, by contributing
-                  to the Games4Africa platform development.
-                </span>
-              </li>
-              <li className="flex">
-                <span className="mr-2 font-bold">•</span>
-                <span>
-                  Optimized the Zheeta project user experience, achieving high
-                  availability and cross-browser compatibility, by implementing
-                  responsive UI components and delivering user-centric designs
-                  with React and TailwindCSS.
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          {/* BDGroups */}
-          <div className="professional-card">
-            <div className="flex justify-between items-start mb-3">
-              <div>
-                <h3 className="text-xl font-bold text-slate-900">
-                  Software Developer
-                </h3>
-                <p className="font-bold font-semibold">BDGroups</p>
-              </div>
-              <span className="text-sm text-slate-600 font-medium">
-                2024 - 2026
-              </span>
-            </div>
-            <p className="text-sm text-slate-600 mb-3">Abuja, Nigeria</p>
-            <ul className="space-y-2 text-slate-700">
-              <li className="flex">
-                <span className="mr-2 font-bold">•</span>
-                <span>
-                  Delivered a complete and scalable event photo-sharing
-                  application, ensuring a seamless user experience, by
-                  developing the SnapUs mobile application front-end with React
-                  Native.
-                </span>
-              </li>
-              <li className="flex">
-                <span className="mr-2 font-bold">•</span>
-                <span>
-                  Achieved a highly available backend infrastructure, supporting
-                  concurrent user traffic, by developing the SnapUs server with
-                  NestJS and hosting it on AWS using Fargate serverless
-                  containers.
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Future-X */}
-          <div className="professional-card">
-            <div className="flex justify-between items-start mb-3">
-              <div>
-                <h3 className="text-xl font-bold text-slate-900">
-                  Frontend Developer
-                </h3>
-                <p className="font-bold font-semibold">Future-X</p>
-              </div>
-              <span className="text-sm text-slate-600 font-medium">
-                2024 - 2026
-              </span>
-            </div>
-            <p className="text-sm text-slate-600 mb-3">Abuja, Nigeria</p>
-            <ul className="space-y-2 text-slate-700">
-              <li className="flex">
-                <span className="mr-2 font-bold">•</span>
-                <span>
-                  Enhanced mobile performance, as measured by a 40% improvement,
-                  by optimizing for responsive design and executing mobile-first
-                  development using TypeScript.
-                </span>
-              </li>
-              <li className="flex">
-                <span className="mr-2 font-bold">•</span>
-                <span>
-                  Reduced front-end bugs, as measured by a 50% decrease and by
-                  implementing robust error handling.
-                </span>
-              </li>
-              <li className="flex">
-                <span className="mr-2 font-bold">•</span>
-                <span>
-                  Improved team collaboration and code maintainability,
-                  accelerating the development process, by instituting clean
-                  coding practices and Git version control workflows.
+                  Built the registration, examination and certification
+                  workflows of the Teachers Registration Council of Nigeria
+                  (TRCN) portal, with 50k+ users, and improved its mobile
+                  performance by 40%.
                 </span>
               </li>
             </ul>
@@ -397,15 +397,15 @@ export default function Home() {
               />
               <div className="flex-1">
                 <h3 className="text-xl font-bold text-slate-900 mb-1">
-                  AWS Certified Developer - Practitioner
+                  AWS Certified Cloud Practitioner
                 </h3>
                 <p className="font-bold font-semibold mb-2">
-                  Amazon Web Services (AWS)
+                  Amazon Web Services (AWS), 2025
                 </p>
                 <p className="text-slate-700">
-                  Validated expertise in developing, deploying, and debugging
-                  cloud-based applications using AWS services. Proficient in AWS
-                  Lambda, S3, EC2, Fargate, RDS, and serverless architecture.
+                  Validated knowledge of core AWS services, cloud architecture,
+                  security and pricing. Applied in production with S3, EC2, ECS,
+                  Fargate and Terraform-provisioned infrastructure.
                 </p>
               </div>
             </div>
@@ -424,7 +424,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-slate-900 mb-1">
                   AI AGENTS AND AGENTIC AI SYSTEMS DEVELOPMENT
                 </h3>
-                <p className="font-bold font-semibold mb-2">META</p>
+                <p className="font-bold font-semibold mb-2">META, 2026</p>
                 <p className="text-slate-700">
                   Mastered the development of Agentic AI systems and
                   Retrieval-Augmented Generation (RAG) using LangChain, PyTorch,
@@ -450,11 +450,11 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
             <a
-              href="mailto:bamideleayomideprecious@yahoo.com"
+              href="mailto:bamideleprecious100@gmail.com"
               className="flex items-center gap-2 text-slate-700 hover:font-bold transition-colors"
             >
               <span className="font-semibold">Email:</span>{" "}
-              bamideleayomideprecious@yahoo.com
+              bamideleprecious100@gmail.com
             </a>
             <span className="hidden sm:block text-slate-300">|</span>
             <a

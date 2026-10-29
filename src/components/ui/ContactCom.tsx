@@ -22,7 +22,7 @@ export default function ContactCom() {
         <LinkedIn className="w-6 h-6" />
       </a>
       <a
-        href="mailto:bamideleayomideprecious@yahoo.com"
+        href="mailto:bamideleprecious100@gmail.com"
         className="icon-hover"
         aria-label="Send me an email"
       >

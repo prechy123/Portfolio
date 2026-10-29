@@ -40,8 +40,9 @@ export default function AboutPage() {
                 Bamidele Ayomide Precious
               </span>
             </a>
-            , a passionate Full Stack Developer with professional experience in
-            building scalable applications.
+            , a Backend Engineer with 4+ years building production APIs in
+            TypeScript and NestJS, on MongoDB, PostgreSQL and Redis, deployed to
+            AWS with Docker, Fargate and Terraform.
           </p>
 
           {/* AWS Certification Section */}
@@ -51,17 +52,17 @@ export default function AboutPage() {
           >
             <div className="flex items-center gap-4 mb-2">
               <h3 className="text-2xl font-bold font-bold">
-                AWS Certified Developer
+                AWS Certified
               </h3>
             </div>
             <div className="flex flex-col md:flex-row gap-4 items-center">
               <div className="flex-1">
                 <p className="font-semibold mb-2 text-slate-800">
-                  AWS Certified Developer - Practitioner
+                  AWS Certified Cloud Practitioner, 2025
                 </p>
                 <p className="text-sm text-slate-700">
-                  Validated expertise in developing, deploying, and debugging
-                  cloud-based applications using AWS services.
+                  Validated knowledge of core AWS services, cloud architecture,
+                  security and pricing.
                 </p>
               </div>
               <div className="flex gap-4">
@@ -84,100 +85,106 @@ export default function AboutPage() {
               </h3>
             </div>
 
-            {/* RAI Nigeria - Mobile App Engineer */}
+            {/* SolarCorp */}
             <div className="mb-6 p-4 bg-white rounded border border-slate-200 shadow-sm">
-              <h4 className="text-xl font-bold text-blue-700">App Developer</h4>
+              <h4 className="text-xl font-bold text-blue-700">Software Developer</h4>
               <p className="text-sm text-slate-600 mb-2">
-                Robotics and Artificial Intelligence Nigeria, Ibadan | 2025 -
+                SolarCorp Technologies Limited, Lagos (Remote) | February 2026 -
+                Present
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-slate-800">
+                <li>
+                  Develop and maintain core backend modules for the SolarCorp
+                  platform using NestJS, Redis and MongoDB, serving 5k+ users at
+                  99.99% uptime
+                </li>
+                <li>
+                  Built active user and unique click counts for the SolarCorp
+                  URL shortener on Redis HyperLogLog
+                </li>
+                <li>
+                  Building Circool Traq, a multi-tenant asset-financing and
+                  repayment platform with role-based access, audit logging, rate
+                  limiting and refresh-token rotation
+                </li>
+                <li>
+                  Provisioned AWS infrastructure as code with Terraform and
+                  Docker deployment pipelines
+                </li>
+                <li>
+                  Integrated Circool AI (LangGraph) into onboarding, doubling
+                  product activation
+                </li>
+              </ul>
+            </div>
+
+            {/* RAI Nigeria */}
+            <div className="mb-6 p-4 bg-white rounded border border-slate-200 shadow-sm">
+              <h4 className="text-xl font-bold text-blue-700">Software Developer</h4>
+              <p className="text-sm text-slate-600 mb-2">
+                Robotics and Artificial Intelligence Nigeria, Ibadan (Remote) |
+                February 2025 - February 2026
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-slate-800">
+                <li>
+                  Built a digital learning platform for AI and Robotics courses
+                  with NestJS, MongoDB and Next.js
+                </li>
+                <li>
+                  Built resumable multipart uploads direct to AWS S3 with retry
+                  on poor networks and ClamAV malware scanning
+                </li>
+                <li>
+                  Integrated Agora WebRTC for live classes, with adaptive
+                  quality, audio-first fallback and automatic reconnection for
+                  poor networks
+                </li>
+                <li>
+                  Shipped native iOS (Swift) and Android (Kotlin) SDKs for
+                  YardCode address verification, reaching 3k+ active users
+                </li>
+                <li>
+                  Architected a WhatsApp AI agent with Llama 3 and LangChain,
+                  increasing lead conversion by 300%
+                </li>
+              </ul>
+            </div>
+
+            {/* Freelance and Contract */}
+            <div className="mb-6 p-4 bg-white rounded border border-slate-200 shadow-sm">
+              <h4 className="text-xl font-bold text-blue-700">Backend Developer (Part-time)</h4>
+              <p className="text-sm text-slate-600 mb-2">
+                Freelance and Contract, Abuja (Remote) | January 2024 - January
                 2026
               </p>
               <ul className="list-disc list-inside space-y-2 text-slate-800">
                 <li>
-                  Developed YardCode mobile application using Expo (React
-                  Native), a system adopted by over 1,000 Nigerians
+                  Designed, built and deployed backend architectures, and the
+                  web and mobile apps on top of them, for 10+ client
+                  organisations
                 </li>
                 <li>
-                  Participated in the MetaXRain program, using llama models to
-                  drive business growth
-                </li>
-                <li>
-                  Designed and deployed an AI-driven intrusion detection system
-                </li>
-                <li>
-                  Collaborated with a cross-functional team on software design,
-                  testing, and deployment
+                  De Cloud23 Technology Limited (contract): built ASP.NET (C#)
+                  services for the Games4Africa and Zheeta platforms, monitored
+                  with Prometheus and Grafana
                 </li>
               </ul>
             </div>
 
-            {/* De Cloud23 Technology Limited */}
+            {/* Teckplus Digital Solutions */}
             <div className="mb-6 p-4 bg-white rounded border border-slate-200 shadow-sm">
-              <h4 className="text-xl font-bold text-blue-700">
-                Full-Stack Developer
-              </h4>
+              <h4 className="text-xl font-bold text-blue-700">Software Engineer</h4>
               <p className="text-sm text-slate-600 mb-2">
-                De Cloud23 Technology Limited, Ibadan | 2025 - 2026
+                Teckplus Digital Solutions, Abuja (Remote) | June 2022 - January
+                2024
               </p>
               <ul className="list-disc list-inside space-y-2 text-slate-800">
                 <li>
-                  Developed Games for Africa platform, creating engaging games
-                  for Africans
+                  Built the registration, examination and certification
+                  workflows of the TRCN portal, with 50k+ users
                 </li>
                 <li>
-                  Contributed to Zheeta project, implementing responsive UI
-                  components and optimizing user experience
-                </li>
-                <li>
-                  Delivered user-centric designs with focus on accessibility,
-                  performance, and cross-browser compatibility
-                </li>
-              </ul>
-            </div>
-
-            {/* BDGroups */}
-            <div className="mb-6 p-4 bg-white rounded border border-slate-200 shadow-sm">
-              <h4 className="text-xl font-bold text-blue-700">
-                Full-Stack Developer
-              </h4>
-              <p className="text-sm text-slate-600 mb-2">
-                BDGroups, Abuja | 2024 - 2026
-              </p>
-              <ul className="list-disc list-inside space-y-2 text-slate-800">
-                <li>
-                  Developed SnapUs complete application ensuring excellent user
-                  experience and scalability
-                </li>
-                <li>
-                  Built and deployed SnapUs server on AWS using Fargate
-                  serverless architecture
-                </li>
-                <li>
-                  Implemented cloud-native solutions for optimal performance and
-                  cost efficiency
-                </li>
-              </ul>
-            </div>
-
-            {/* Future-X */}
-            <div className="mb-6 p-4 bg-white rounded border border-slate-200 shadow-sm">
-              <h4 className="text-xl font-bold text-blue-700">
-                Frontend Developer
-              </h4>
-              <p className="text-sm text-slate-600 mb-2">
-                Future-X, Abuja | 2024 - 2026
-              </p>
-              <ul className="list-disc list-inside space-y-2 text-slate-800">
-                <li>
-                  Enhanced mobile performance by 40% through optimization for
-                  responsive design and mobile-first development
-                </li>
-                <li>
-                  Reduced front-end bugs by 50% by implementing robust Nuxt.js
-                  error handling and testing
-                </li>
-                <li>
-                  Improved code maintainability and collaboration through clean
-                  coding practices
+                  Improved the portal&apos;s mobile performance by 40%
                 </li>
               </ul>
             </div>
@@ -214,9 +221,9 @@ export default function AboutPage() {
           <p className="font-bold my-6 text-slate-800">
             My everyday tech stack includes{" "}
             <span className="style-text-1">
-              Next.js, Nuxt.js, Nest.js, React-Native, Expo, React.js, Vue.js,
-              TypeScript, Tailwind CSS, Node.js, Express.js, MongoDB,
-              PostgreSQL, Python, Flask, AWS, Azure
+              TypeScript, NestJS, Node.js, MongoDB, PostgreSQL, Redis, AWS,
+              Terraform, Docker, GitHub Actions, Agora WebRTC, LangChain,
+              Next.js, React Native
             </span>
             . I work primarily on{" "}
             <span className="style-text-1">macOS & Ubuntu</span> and{" "}
@@ -257,13 +264,13 @@ export default function AboutPage() {
             I would love to connect and explore opportunities to collaborate on
             exciting projects. Reach out via email at{" "}
             <a
-              href="mailto:bamideleayomideprecious@yahoo.com?subject=Portfolio Inquiry&body=Hi Bamidele,%0D%0A%0D%0AMy name is "
+              href="mailto:bamideleprecious100@gmail.com?subject=Portfolio Inquiry&body=Hi Bamidele,%0D%0A%0D%0AMy name is "
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline transition-all"
             >
               <span className="style-text-1">
-                bamideleayomideprecious@yahoo.com
+                bamideleprecious100@gmail.com
               </span>
             </a>{" "}
             or WhatsApp at{" "}

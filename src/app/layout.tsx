@@ -6,26 +6,26 @@ import { Barlow } from "next/font/google";
 import { Provider } from "@/utils/providers";
 
 export const metadata: Metadata = {
-  title: "Bamidele Ayomide Precious - Senior Full Stack Developer",
+  title: "Bamidele Ayomide Precious - Backend Engineer",
   description:
-    "AWS Certified Senior Full Stack Developer with 5+ years of experience building scalable web and mobile applications. Specialized in React, React Native, Node.js, and cloud deployments.",
+    "Backend Engineer with 4+ years building production APIs in TypeScript and NestJS, on MongoDB, PostgreSQL and Redis, deployed to AWS with Docker, Fargate and Terraform. AWS Certified Cloud Practitioner.",
   keywords:
-    "Bamidele Ayomide Precious, Senior Full Stack Developer, AWS Certified Developer, React Native Developer, Node.js Developer, Full Stack Engineer, Mobile App Developer, Cloud Engineer",
+    "Bamidele Ayomide Precious, Backend Engineer, NestJS Developer, Node.js Developer, TypeScript, AWS Certified Cloud Practitioner, WebRTC, Terraform, Software Engineer Nigeria",
   authors: [{ name: "Bamidele Ayomide Precious" }],
   creator: "Bamidele Ayomide Precious",
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "Bamidele Ayomide Precious - Senior Full Stack Developer",
+    title: "Bamidele Ayomide Precious - Backend Engineer",
     description:
-      "AWS Certified Senior Full Stack Developer with 5+ years of experience. Specialized in building scalable applications with React, React Native, and Node.js.",
+      "Backend Engineer with 4+ years building production APIs with TypeScript, NestJS, MongoDB, PostgreSQL, Redis and AWS.",
     siteName: "Bamidele Ayomide Precious",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bamidele Ayomide Precious - Senior Full Stack Developer",
+    title: "Bamidele Ayomide Precious - Backend Engineer",
     description:
-      "AWS Certified Full Stack Developer | React | React Native | Node.js | Cloud",
+      "Backend Engineer | NestJS | TypeScript | AWS | WebRTC",
     creator: "@prec__hy",
   },
 };

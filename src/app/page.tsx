@@ -5,6 +5,8 @@ import { projects } from "./projectsContents";
 export default function Home() {
   // Featured projects (top 5 by impact)
   const featuredProjects = projects.slice(0, 5);
+  // Hidden for now; set to true to show the Featured Projects section again
+  const showFeaturedProjects = false;
 
   return (
     <main className="bg-white min-h-screen">
@@ -317,6 +319,7 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Section */}
+      {showFeaturedProjects && (
       <section id="projects" className="section-container ">
         <h2 className="section-title">Featured Projects</h2>
 
@@ -379,6 +382,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      )}
 
       {/* Education & Certifications Section */}
       <section id="education" className="section-container">
